@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
 
 
 
@@ -21,10 +21,10 @@
 
     <style>
         @font-face {
-          font-family: 'BrushScript'; /* Choose a name for your font */
-          src: url('./fonts/BrushScript.ttf') format('truetype'); /* Path to your .ttf file */
-          font-weight: normal; /* Adjust if your font has different weights */
-          font-style: normal;  /* Adjust if your font has different styles (e.g., italic) */
+          font-family: 'BrushScript'; 
+          src: url('./fonts/BrushScript.ttf') format('truetype'); 
+          font-weight: normal; 
+          font-style: normal; 
         }
         /* Custom styles */
         body {
@@ -33,17 +33,24 @@
             color: #333;
         }
         .hero-bg {
-            background-image: url('./images/gite-vue-haut.jpg');
+            background-image: url('./images/gite-vue-haut.webp');
             background-size: cover;
             background-position: center;
         }
         .lang-btn {
             transition: all 0.3s ease;
+            background-color: #E0E0E0;
+            color: #555;
         }
         .lang-btn.active {
-            background-color: #A3B18A;
+            background-color: #4CAF50; 
             color: white;
             font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .flag-icon {
+        font-size: 1.1em; /* Adjust size relative to text */
+        line-height: 1; /* Ensures vertical alignment */
         }
         .gallery-img {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -72,9 +79,15 @@
                 <a href="#contact" class="text-gray-600 hover:text-green-800" data-translate="nav_contact">Contact</a>
             </div>
             <div class="flex items-center space-x-1 border border-gray-300 rounded-full p-1">
-                <button id="lang-fr" class="lang-btn active px-3 py-1 text-sm rounded-full">FR</button>
-                <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-full">EN</button>
-                <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-full">ES</button>
+                <button id="lang-fr" class="lang-btn active px-3 py-1 text-sm rounded-full flex items-center space-x-1">
+                    <span class="flag-icon">🇫🇷</span> <span>FR</span>
+                </button>
+                <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center space-x-1">
+                    <span class="flag-icon">🇬🇧</span> <span>EN</span>
+                </button>
+                <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center space-x-1">
+                    <span class="flag-icon">🇪🇸</span> <span>ES</span>
+                </button>
             </div>
         </nav>
     </header>
@@ -104,7 +117,7 @@
                     </p>
                 </div>
                 <div class="rounded-lg overflow-hidden shadow-xl">
-                    <img src="./images/terrasse.jpg" alt="Vue depuis la terrasse" class="w-full h-full object-cover">
+                    <img src="./images/terrasse.webp" alt="Vue depuis la terrasse" class="w-full h-full object-cover">
                 </div>
             </div>
         </section>
@@ -114,7 +127,7 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center" data-translate="gite_title">Le confort d'un gîte entièrement équipé</h2>
             <div class="grid md:grid-cols-2 gap-12 items-start">
                 <div class="rounded-lg overflow-hidden shadow-xl">
-                     <img src="./images/salon.jpg" alt="Salon du gîte" class="w-full h-full object-cover">
+                     <img src="./images/salon.webp" alt="Salon du gîte" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <p class="text-gray-600 mb-6" data-translate="gite_p1">
@@ -143,23 +156,23 @@
             <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_interior">Intérieur</h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
                 <!-- Interior Images - Placeholders -->
-                <img src="./images/interieur1.jpg" alt="Intérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur2.jpg" alt="Intérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur3.jpg" alt="Intérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur4.jpg" alt="Intérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur5.jpg" alt="Intérieur du gîte 5" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur6.jpg" alt="Intérieur du gîte 6" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur7.jpg" alt="Intérieur du gîte 7" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur8.jpg" alt="Intérieur du gîte 8" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur1.webp" alt="Intérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur2.webp" alt="Intérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur3.webp" alt="Intérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur4.webp" alt="Intérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur5.webp" alt="Intérieur du gîte 5" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur6.webp" alt="Intérieur du gîte 6" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur7.webp" alt="Intérieur du gîte 7" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur8.webp" alt="Intérieur du gîte 8" class="gallery-img rounded-lg cursor-pointer">
             </div>
 
             <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_exterior">Extérieur</h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <!-- Exterior Images - Placeholders -->
-                <img src="./images/exterieur1.jpg" alt="Extérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/exterieur2.jpg" alt="Extérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/exterieur3.jpg" alt="Extérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/exterieur4.jpg" alt="Extérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur1.webp" alt="Extérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur2.webp" alt="Extérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur3.webp" alt="Extérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur4.webp" alt="Extérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
             </div>
         </section>
 
@@ -278,10 +291,22 @@
                      <p class="mb-6" data-translate="contact_host_languages">Langues parlées : Français, Anglais, Espagnol.</p>
 
                      <div class="space-y-4 text-gray-700">
-                         <p><i class="fa-solid fa-map-marker-alt w-6 text-green-700"></i> 805, route de la Balasserie, 69420 Longes</p>
-                         <p><i class="fa-solid fa-phone w-6 text-green-700"></i> 07 85 51 64 74</p>
-                         <p><i class="fa-solid fa-envelope w-6 text-green-700"></i> <a href="mailto:lagrangedesbalas@gite-pilat.fr" class="hover:underline">lagrangedesbalas@gite-pilat.fr</a></p>
-                         <p><i class="fa-solid fa-globe w-6 text-green-700"></i> <a href="https://gite-pilat.fr" target="_blank" class="hover:underline">gite-pilat.fr</a></p>
+                        <p><i class="fa-solid fa-map-marker-alt w-6 text-green-700"></i> 805, route de la Balasserie, 69420 Longes</p>
+                        
+                        <p>
+                            <i class="fa-solid fa-phone w-6 text-green-700"></i> 
+                            <span id="phone-contact">
+                                Votre navigateur doit supporter JavaScript pour voir le numéro de téléphone.
+                            </span>
+                        </p>
+                        
+                        <p>
+                            <i class="fa-solid fa-envelope w-6 text-green-700"></i> 
+                            <span id="email-contact">
+                                Votre navigateur doit supporter JavaScript pour voir l'e-mail.
+                            </span>
+                        </p>                         
+                        <p><i class="fa-solid fa-globe w-6 text-green-700"></i> <a href="https://gite-pilat.fr" target="_blank" class="hover:underline">gite-pilat.fr</a></p>
                      </div>
                 </div>
                 <div class="h-80 md:h-full rounded-lg overflow-hidden shadow-xl">
@@ -307,6 +332,28 @@
     </footer>
 
     <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const user = 'lagrangedesbalas';
+        const domain = 'gite-pilat.fr';
+        const emailElement = document.getElementById('email-contact');
+        if (emailElement) {
+            const emailAddress = user + '@' + domain;
+            emailElement.innerHTML = `<a href="mailto:${emailAddress}" class="hover:underline">${emailAddress}</a>`;
+        }
+
+        const part1 = '07';
+        const part2 = '85';
+        const part3 = '51';
+        const part4 = '64';
+        const part5 = '74';
+        const phoneElement = document.getElementById('phone-contact');
+
+        if (phoneElement) {
+            const phoneNumberDisplay = `${part1} ${part2} ${part3} ${part4} ${part5}`;
+            const phoneNumberLink = `${part1}${part2}${part3}${part4}${part5}`; // Sans espaces pour le lien tel:
+            phoneElement.innerHTML = `<a href="tel:+33${phoneNumberLink.substring(1)}" class="hover:underline">${phoneNumberDisplay}</a>`;
+        }
+    });
     document.addEventListener('DOMContentLoaded', () => {
 
         // --- Translations Object ---
