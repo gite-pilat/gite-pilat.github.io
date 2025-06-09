@@ -12,14 +12,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
 
 
-    
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
+        @font-face {
+          font-family: 'BrushScript'; /* Choose a name for your font */
+          src: url('./fonts/BrushScript.ttf') format('truetype'); /* Path to your .ttf file */
+          font-weight: normal; /* Adjust if your font has different weights */
+          font-style: normal;  /* Adjust if your font has different styles (e.g., italic) */
+        }
         /* Custom styles */
         body {
             font-family: 'Poppins', sans-serif;
@@ -27,7 +33,7 @@
             color: #333;
         }
         .hero-bg {
-            background-image: url('./gite-vue-haut.jpg');
+            background-image: url('./images/gite-vue-haut.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -46,6 +52,9 @@
             transform: scale(1.05);
             box-shadow: 0 10px 20px rgba(0,0,0,0.15);
         }
+        .title {
+            font-family: 'BrushScript', sans-serif;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -53,7 +62,7 @@
     <!-- =========== Header =========== -->
     <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-800" data-translate="nav_title">La Grange des Balas</a>
+            <a href="#" class="text-2xl font-bold text-gray-800 title" data-translate="nav_title">La Grange des Balas</a>
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#about" class="text-gray-600 hover:text-green-800" data-translate="nav_about">Le Gîte</a>
                 <a href="#gallery" class="text-gray-600 hover:text-green-800" data-translate="nav_gallery">Galerie</a>
@@ -74,8 +83,8 @@
     <section class="hero-bg h-[60vh] md:h-[80vh] text-white flex items-center justify-center relative">
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="text-center z-10 p-6">
-            <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg" data-translate="hero_title">La Grange des Balas</h1>
-            <p class="mt-4 text-lg md:text-2xl font-light drop-shadow-md" data-translate="hero_subtitle">Gîte pour 8 personnes au cœur du parc naturel du Pilat</p>
+            <h1 class="text-4xl md:text-6xl drop-shadow-lg title" data-translate="hero_title">La Grange des Balas</h1>
+            <p class="mt-4 text-lg md:text-2xl font-light drop-shadow-md" data-translate="hero_subtitle">Gîte dans le parc naturel régional du Pilat</p>
         </div>
     </section>
 
@@ -95,7 +104,7 @@
                     </p>
                 </div>
                 <div class="rounded-lg overflow-hidden shadow-xl">
-                    <img src="./terrasse.jpg" alt="Vue depuis la terrasse" class="w-full h-full object-cover">
+                    <img src="./images/terrasse.jpg" alt="Vue depuis la terrasse" class="w-full h-full object-cover">
                 </div>
             </div>
         </section>
@@ -105,23 +114,23 @@
             <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center" data-translate="gite_title">Le confort d'un gîte entièrement équipé</h2>
             <div class="grid md:grid-cols-2 gap-12 items-start">
                 <div class="rounded-lg overflow-hidden shadow-xl">
-                     <img src="salon.jpg" alt="Salon du gîte" class="w-full h-full object-cover">
+                     <img src="./images/salon.jpg" alt="Salon du gîte" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <p class="text-gray-600 mb-6" data-translate="gite_p1">
-                        Le gîte comporte un grand salon-salle à manger, une cuisine entièrement équipée, et deux salles de bain pour votre confort. Les moustiquaires à chaque fenêtre vous assurent des nuits paisibles.
+                        Le gîte comporte un grand salon-salle à manger, une cuisine entièrement équipée, et deux salles de bain pour votre confort. Des moustiquaires aux fenêtre vous assurent des nuits paisibles.
                     </p>
                     <h3 class="text-xl font-semibold text-gray-700 mb-3" data-translate="gite_rooms_title">Quatre chambres pour 6 à 8 personnes :</h3>
                     <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
                         <li data-translate="gite_room1">Un lit double 160x190</li>
                         <li data-translate="gite_room2">Deux lits doubles 140x190</li>
-                        <li data-translate="gite_room3">Deux lits gigogne 80x190 (formant un lit double)</li>
+                        <li data-translate="gite_room3">Deux lits gigogne 80x190 (formant deux lits doubles)</li>
                     </ul>
                      <p class="text-gray-600 mb-6" data-translate="gite_p2">
                         L’extérieur est agrémenté d’une belle terrasse avec vue, équipée d’une table et de bancs en pierre, de parasols et de sièges de relaxation.
                     </p>
                      <p class="text-gray-600 italic text-sm" data-translate="gite_p3">
-                        À la demande : accès à une remise pour les vélos, une buanderie et une salle à manger d’été.
+                        À la demande : accès à une remise pour vos vélos, une buanderie et une salle à manger d’été.
                     </p>
                 </div>
             </div>
@@ -134,23 +143,23 @@
             <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_interior">Intérieur</h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
                 <!-- Interior Images - Placeholders -->
-                <img src="./interieur1.jpg" alt="Intérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./interieur2.jpg" alt="Intérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./interieur3.jpg" alt="Intérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./interieur4.jpg" alt="Intérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./interieur5.jpg" alt="Intérieur du gîte 5" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./interieur6.jpg" alt="Intérieur du gîte 6" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./interieur7.jpg" alt="Intérieur du gîte 7" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./interieur8.jpg" alt="Intérieur du gîte 8" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur1.jpg" alt="Intérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur2.jpg" alt="Intérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur3.jpg" alt="Intérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur4.jpg" alt="Intérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur5.jpg" alt="Intérieur du gîte 5" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur6.jpg" alt="Intérieur du gîte 6" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur7.jpg" alt="Intérieur du gîte 7" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur8.jpg" alt="Intérieur du gîte 8" class="gallery-img rounded-lg cursor-pointer">
             </div>
 
             <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_exterior">Extérieur</h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <!-- Exterior Images - Placeholders -->
-                <img src="./exterieur1.jpg" alt="Extérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./exterieur2.jpg" alt="Extérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./exterieur3.jpg" alt="Extérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./exterieur4.jpg" alt="Extérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur1.jpg" alt="Extérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur2.jpg" alt="Extérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur3.jpg" alt="Extérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur4.jpg" alt="Extérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
             </div>
         </section>
 
@@ -196,7 +205,8 @@
         <!-- =========== Activities Section =========== -->
         <section id="activities" class="mb-24 scroll-mt-20">
              <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-translate="activities_title">Activités et découvertes</h2>
-             <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10" data-translate="activities_intro">Le gîte met à votre disposition tous les documents nécessaires pour explorer la région. Voici quelques suggestions :</p>
+             <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10" data-translate="activities_intro">Le gîte met à votre disposition tous les documents nécessaires pour explorer la région. </p>
+             <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10" data-translate="activities_intro"> Voici quelques suggestions :</p>
              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="font-semibold text-lg mb-2" data-translate="activities_item1_title">Randonnées locales</h3>
@@ -226,33 +236,38 @@
         </section>
 
         <!-- =========== Rates Section =========== -->
-        <section id="rates" class="mb-24 scroll-mt-20 bg-green-50 p-8 md:p-12 rounded-lg">
-            <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center" data-translate="rates_title">Tarifs & Disponibilités</h2>
-            <p class="text-center text-gray-600 mb-8" data-translate="rates_opening_dates">Nous vous accueillons du 1er juin au 31 octobre.</p>
-            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-                <ul class="space-y-4 text-gray-700">
-                    <li class="flex justify-between border-b pb-2">
-                        <span data-translate="rates_item1_label">Forfait 2 nuits (minimum)</span>
-                        <span class="font-bold text-lg">560 €</span>
-                    </li>
-                    <li class="flex justify-between border-b pb-2">
-                        <span data-translate="rates_item2_label">Nuit supplémentaire</span>
-                        <span class="font-bold text-lg">80 €</span>
-                    </li>
-                    <li class="flex justify-between border-b pb-2">
-                        <span data-translate="rates_item3_label">Semaine complète (7 nuits)</span>
-                        <span class="font-bold text-lg">960 €</span>
-                    </li>
-                     <li class="flex justify-between border-b pb-2">
-                        <span data-translate="rates_item4_label">Semaine supplémentaire</span>
-                        <span class="font-bold text-lg">800 €</span>
-                    </li>
-                </ul>
-                <p class="mt-6 text-sm text-center text-gray-500" data-translate="rates_included_info">
-                    Ces tarifs sont tout compris (fourniture des draps, linge de toilette, eau, électricité, Wifi) hors-mis la taxe de séjour qui sera en sus.
-                </p>
-            </div>
-        </section>
+    <section id="rates" class="mb-24 scroll-mt-20 bg-green-50 p-8 md:p-12 rounded-lg">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center" data-translate="rates_title">Tarifs & Disponibilités</h2>
+        <p class="text-center text-gray-600 mb-8" data-translate="rates_opening_dates">Nous vous accueillons du 1er mai au 31 octobre.</p>
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <ul class="space-y-4 text-gray-700">
+                <li class="flex justify-between border-b pb-2">
+                    <span data-translate="rates_item1_label">Forfait 2 nuits (minimum)</span>
+                    <span class="font-bold text-lg">560€</span>
+                </li>
+                <li class="flex justify-between border-b pb-2">
+                    <span data-translate="rates_item2_label">Nuit supplémentaire</span>
+                    <span class="font-bold text-lg">80€</span>
+                </li>
+                <li class="flex justify-between border-b pb-2">
+                    <span data-translate="rates_item3_label">Semaine complète (7 nuits)</span>
+                    <span class="font-bold text-lg">960€</span>
+                </li>
+                <li class="flex justify-between border-b pb-2">
+                    <span data-translate="rates_item4_label">Semaine supplémentaire</span>
+                    <span class="font-bold text-lg">800€</span>
+                </li>
+
+                <li class="flex justify-between border-b pb-2 text-gray-400 italic">
+                    <span data-translate="rates_item4_label">Ménage fin de séjour (optionnel)</span>
+                    <span class="font-bold text-lg">80€</span>
+                </li>
+            </ul>
+            <p class="mt-6 text-sm text-center text-gray-500" data-translate="rates_included_info">
+                Ces tarifs sont tout compris (fourniture des draps, linge de toilette, eau, électricité, Wifi) hors-mis la taxe de séjour qui sera en sus.
+            </p>
+        </div>
+    </section>
 
         <!-- =========== Contact Section =========== -->
         <section id="contact" class="scroll-mt-20">
