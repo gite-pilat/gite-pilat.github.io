@@ -3,20 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Grange des Balas</title>
+    <title>Gîte La Grange des Balas - Location 8 personnes dans le Parc du Pilat</title>
+    <meta name="description" content="Découvrez La Grange des Balas, un gîte pour 8 personnes à Longes, au cœur du Parc Naturel Régional du Pilat. Idéal pour des vacances nature, randonnées et détente en famille.">
+    <meta name="keywords" content="gîte pilat, location de vacances pilat, gîte la balasserie, gîte 8 personnes, location saisonnière longes, gîte de groupe rhône, vacances nature, parc naturel régional du pilat, randonnée pilat">
+    <link rel="canonical" href="https://gite-pilat.fr">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
     
-    <!-- Tailwind CSS CDN -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VacationRental",
+      "name": "La Grange des Balas",
+      "description": "Gîte pour 8 personnes situé dans le hameau de la Balasserie à Longes (69420), au sein du Parc Naturel Régional du Pilat.",
+      "image": "https://gite-pilat.fr/images/gite-vue-haut.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "805, route de la Balasserie",
+        "addressLocality": "Longes",
+        "postalCode": "69420",
+        "addressCountry": "FR"
+      },
+      "telephone": "+33785516474",
+      "priceRange": "€€",
+      "url": "https://gite-pilat.fr",
+      "numberOfRooms": 4,
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "maxValue": 8,
+        "unitText": "personnes"
+      },
+      "petsAllowed": false,
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée" },
+        { "@type": "LocationFeatureSpecification", "name": "Wi-Fi" },
+        { "@type": "LocationFeatureSpecification", "name": "Terrasse avec vue" },
+        { "@type": "LocationFeatureSpecification", "name": "Remise à vélos" },
+        { "@type": "LocationFeatureSpecification", "name": "Parking gratuit" }
+      ]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
-
-
-
-    <!-- Font Awesome for icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
 
     <style>
@@ -26,7 +58,6 @@
           font-weight: normal; 
           font-style: normal; 
         }
-        /* Custom styles */
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #F8F7F4;
@@ -49,8 +80,8 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
         .flag-icon {
-        font-size: 1.1em; /* Adjust size relative to text */
-        line-height: 1; /* Ensures vertical alignment */
+        font-size: 1.1em;
+        line-height: 1;
         }
         .gallery-img {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -61,6 +92,9 @@
         }
         .title {
             font-family: 'BrushScript', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -101,33 +135,32 @@
         </div>
     </section>
 
-    <!-- Main Content -->
     <main class="container mx-auto px-6 py-16">
 
         <!-- =========== About Section =========== -->
         <section id="about" class="mb-24 scroll-mt-20">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4" data-translate="about_title">Un lieu chargé d'histoire</h2>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4" data-translate="about_title">Un lieu chargé d'histoire au hameau de la Balasserie</h2>
                     <p class="text-gray-600 mb-4" data-translate="about_p1">
                         Les "balas" désignaient autrefois les genêts dont on faisait les balais. C’est aussi le nom de la famille qui a vécu depuis le XVème siècle dans cette ferme et a donné son nom au hameau.
                     </p>
                     <p class="text-gray-600" data-translate="about_p2">
-                        Pour les amoureux de la nature, notre gîte est situé dans le parc naturel régional du Pilat, lieu privilégié pour de belles balades à pied ou à vélo.
+                        Pour les amoureux de la nature, notre gîte est situé dans le parc naturel régional du Pilat, lieu privilégié pour de belles balades à pied ou à vélo au départ de la maison.
                     </p>
                 </div>
                 <div class="rounded-lg overflow-hidden shadow-xl">
-                    <img src="./images/terrasse.webp" alt="Vue depuis la terrasse" class="w-full h-full object-cover">
+                    <img src="./images/terrasse.webp" alt="Terrasse en pierre du gîte avec vue panoramique sur les monts du Pilat" class="w-full h-full object-cover">
                 </div>
             </div>
         </section>
 
         <!-- =========== Gîte Details Section =========== -->
         <section id="gite" class="mb-24 scroll-mt-20 bg-white p-8 md:p-12 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center" data-translate="gite_title">Le confort d'un gîte entièrement équipé</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center" data-translate="gite_title">Le confort d'un gîte entièrement équipé pour 8 personnes</h2>
             <div class="grid md:grid-cols-2 gap-12 items-start">
                 <div class="rounded-lg overflow-hidden shadow-xl">
-                     <img src="./images/salon.webp" alt="Salon du gîte" class="w-full h-full object-cover">
+                     <img src="./images/salon.webp" alt="Grand salon du gîte avec poutres apparentes, canapés et grande table à manger" class="w-full h-full object-cover">
                 </div>
                 <div>
                     <p class="text-gray-600 mb-6" data-translate="gite_p1">
@@ -155,30 +188,28 @@
             
             <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_interior">Intérieur</h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
-                <!-- Interior Images - Placeholders -->
-                <img src="./images/interieur1.webp" alt="Intérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur2.webp" alt="Intérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur3.webp" alt="Intérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur4.webp" alt="Intérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur5.webp" alt="Intérieur du gîte 5" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur6.webp" alt="Intérieur du gîte 6" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur7.webp" alt="Intérieur du gîte 7" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/interieur8.webp" alt="Intérieur du gîte 8" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur1.webp" alt="Cuisine équipée du gîte La Grange des Balas" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur2.webp" alt="Chambre avec lit double et murs en pierre" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur3.webp" alt="Salle de bain moderne" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur4.webp" alt="Coin salon confortable avec poêle à bois" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur5.webp" alt="Deuxième chambre parentale du gîte dans le Pilat" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur6.webp" alt="Détail de la décoration intérieure rustique et chaleureuse" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur7.webp" alt="Espace repas convivial pour 8 personnes" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/interieur8.webp" alt="Chambre avec lits gigognes" class="gallery-img rounded-lg cursor-pointer">
             </div>
 
-            <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_exterior">Extérieur</h3>
+            <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_exterior">Extérieur et vue sur le Pilat</h3>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Exterior Images - Placeholders -->
-                <img src="./images/exterieur1.webp" alt="Extérieur du gîte 1" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/exterieur2.webp" alt="Extérieur du gîte 2" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/exterieur3.webp" alt="Extérieur du gîte 3" class="gallery-img rounded-lg cursor-pointer">
-                <img src="./images/exterieur4.webp" alt="Extérieur du gîte 4" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur1.webp" alt="Façade en pierre de la ferme rénovée La Grange des Balas" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur2.webp" alt="Vue sur la vallée depuis la terrasse du gîte" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur3.webp" alt="Jardin et espace détente extérieur de la location" class="gallery-img rounded-lg cursor-pointer">
+                <img src="./images/exterieur4.webp" alt="Le hameau de la Balasserie à Longes, environnement du gîte" class="gallery-img rounded-lg cursor-pointer">
             </div>
         </section>
 
         <!-- =========== Amenities Section =========== -->
         <section id="amenities" class="mb-24 scroll-mt-20 bg-white p-8 md:p-12 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-translate="amenities_title">En bref</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-translate="amenities_title">Les équipements du gîte en bref</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div class="flex flex-col items-center">
                     <i class="fa-solid fa-users text-4xl text-green-700 mb-3"></i>
@@ -217,7 +248,7 @@
 
         <!-- =========== Activities Section =========== -->
         <section id="activities" class="mb-24 scroll-mt-20">
-             <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-translate="activities_title">Activités et découvertes</h2>
+             <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-translate="activities_title">Activités et découvertes dans le Pilat</h2>
              <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10" data-translate="activities_intro">Le gîte met à votre disposition tous les documents nécessaires pour explorer la région. </p>
              <p class="text-center text-gray-600 max-w-3xl mx-auto mb-10" data-translate="activities_intro2"> Voici quelques suggestions :</p>
              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -248,9 +279,9 @@
              </div>
         </section>
 
-        <!-- =========== Rates Section =========== -->
+    <!-- =========== Rates Section =========== -->
     <section id="rates" class="mb-24 scroll-mt-20 bg-green-50 p-8 md:p-12 rounded-lg">
-        <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center" data-translate="rates_title">Tarifs & Disponibilités</h2>
+        <h2 class="text-3xl font-bold text-gray-800 mb-2 text-center" data-translate="rates_title">Tarifs & Disponibilités de notre Gîte</h2>
         <p class="text-center text-gray-600 mb-8" data-translate="rates_opening_dates">Nous vous accueillons du 1er mai au 31 octobre.</p>
         <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
             <ul class="space-y-4 text-gray-700">
@@ -270,7 +301,6 @@
                     <span data-translate="rates_item4_label">Semaine supplémentaire</span>
                     <span class="font-bold text-lg">800€</span>
                 </li>
-
                 <li class="flex justify-between border-b pb-2 text-gray-400 italic">
                     <span data-translate="rates_item5_label">Ménage fin de séjour (optionnel)</span>
                     <span class="font-bold text-lg">80€</span>
@@ -286,7 +316,7 @@
         <section id="contact" class="scroll-mt-20">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                     <h2 class="text-3xl font-bold text-gray-800 mb-6" data-translate="contact_title">Contactez-nous</h2>
+                     <h2 class="text-3xl font-bold text-gray-800 mb-6" data-translate="contact_title">Contact et Réservation</h2>
                      <p class="mb-4" data-translate="contact_host_intro">Votre hôte, <strong>Marie-Noëlle BERLIOZ</strong>, sera ravie de vous accueillir.</p>
                      <p class="mb-6" data-translate="contact_host_languages">Langues parlées : Français, Anglais, Espagnol.</p>
 
@@ -305,7 +335,7 @@
                             <span id="email-contact">
                                 Votre navigateur doit supporter JavaScript pour voir l'e-mail.
                             </span>
-                        </p>                         
+                        </p>                     
                         <p><i class="fa-solid fa-globe w-6 text-green-700"></i> <a href="https://gite-pilat.fr" target="_blank" class="hover:underline">gite-pilat.fr</a></p>
                      </div>
                 </div>
@@ -318,7 +348,7 @@
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade"
-                        title="Localisation du gîte sur Google Maps">
+                        title="Localisation du gîte La Grange des Balas sur Google Maps">
                     </iframe>
                 </div>
             </div>
@@ -351,13 +381,11 @@
 
         if (phoneElement) {
             const phoneNumberDisplay = `${part1} ${part2} ${part3} ${part4} ${part5}`;
-            const phoneNumberLink = `${part1}${part2}${part3}${part4}${part5}`; // Sans espaces pour le lien tel:
-            phoneElement.innerHTML = `<a href="tel:+33${phoneNumberLink.substring(1)}" class="hover:underline">${phoneNumberDisplay}</a>`;
+            const phoneNumberLink = `+33${part1}${part2}${part3}${part4}${part5}`;
+            phoneElement.innerHTML = `<a href="tel:${phoneNumberLink}" class="hover:underline">${phoneNumberDisplay}</a>`;
         }
     });
     document.addEventListener('DOMContentLoaded', () => {
-
-        // --- Translations Object ---
         const translations = {
             'fr': {
                 nav_title: "La Grange des Balas",
@@ -369,10 +397,10 @@
                 nav_contact: "Contact",
                 hero_title: "La Grange des Balas",
                 hero_subtitle: "Gîte dans le parc naturel régional du Pilat",
-                about_title: "Un lieu chargé d'histoire",
+                about_title: "Un lieu chargé d'histoire au hameau de la Balasserie",
                 about_p1: "Les \"balas\" désignaient autrefois les genêts dont on faisait les balais. C’est aussi le nom de la famille qui a vécu depuis le XVème siècle dans cette ferme et a donné son nom au hameau.",
-                about_p2: "Pour les amoureux de la nature, notre gîte est situé dans le parc naturel régional du Pilat, lieu privilégié pour de belles balades à pied ou à vélo.",
-                gite_title: "Le confort d'un gîte entièrement équipé",
+                about_p2: "Pour les amoureux de la nature, notre gîte est situé dans le parc naturel régional du Pilat, lieu privilégié pour de belles balades à pied ou à vélo au départ de la maison.",
+                gite_title: "Le confort d'un gîte entièrement équipé pour 8 personnes",
                 gite_p1: "Le gîte comporte un grand salon-salle à manger, une cuisine entièrement équipée, et deux salles de bain pour votre confort. Des moustiquaires aux fenêtre vous assurent des nuits paisibles.",
                 gite_rooms_title: "Quatre chambres pour 6 à 8 personnes :",
                 gite_room1: "Un lit double 160x190",
@@ -382,17 +410,17 @@
                 gite_p3: "À la demande : accès à une remise pour vos vélos, une buanderie et une salle à manger d’été.",
                 gallery_title: "Découvrez le gîte en images",
                 gallery_interior: "Intérieur",
-                gallery_exterior: "Extérieur",
-                amenities_title: "En bref",
+                gallery_exterior: "Extérieur et vue sur le Pilat",
+                amenities_title: "Les équipements du gîte en bref",
                 amenities_capacity_val: "8 personnes",
                 amenities_rooms_val: "4 chambres",
                 amenities_terrace_val: "Terrasse avec vue",
                 amenities_bike_val: "Remise à vélos",
                 amenities_pets_val: "Animaux non acceptés",
                 amenities_parties_val: "Soirées festives non adaptées",
-                activities_title: "Activités et découvertes",
+                activities_title: "Activités et découvertes dans le Pilat",
                 activities_intro: "Le gîte met à votre disposition tous les documents nécessaires pour explorer la région.",
-                activities_intro2: "Voici quelques suggestions :",                
+                activities_intro2: "Voici quelques suggestions :",               
                 activities_item1_title: "Randonnées locales",
                 activities_item1_desc: "Explorez les nombreux chemins de la commune et découvrez ses curiosités naturelles et historiques.",
                 activities_item2_title: "Sainte-Croix-en-Jarez",
@@ -405,7 +433,7 @@
                 activities_item5_desc: "Profitez des paysages et des activités offertes par le parc, avec un passage par Pélussin.",
                 activities_item6_title: "Parc Animalier",
                 activities_item6_desc: "Une sortie idéale en famille pour découvrir le parc animalier de Saint-Martin-la-Plaine.",
-                rates_title: "Tarifs & Disponibilités",
+                rates_title: "Tarifs & Disponibilités de notre Gîte",
                 rates_opening_dates: "Nous vous accueillons du 1er mai au 31 octobre.",
                 rates_item1_label: "Forfait 2 nuits (minimum)",
                 rates_item2_label: "Nuit supplémentaire",
@@ -413,7 +441,7 @@
                 rates_item4_label: "Semaine supplémentaire",
                 rates_item5_label: "Ménage fin de séjour (optionnel)",
                 rates_included_info: "Ces tarifs sont tout compris (fourniture des draps, linge de toilette, eau, électricité, Wifi) hors-mis la taxe de séjour qui sera en sus.",
-                contact_title: "Contactez-nous",
+                contact_title: "Contact et Réservation",
                 contact_host_intro: "Votre hôte, <strong>Marie-Noëlle BERLIOZ</strong>, sera ravie de vous accueillir.",
                 contact_host_languages: "Langues parlées : Français, Anglais, Espagnol."
             },
@@ -427,10 +455,10 @@
                 nav_contact: "Contact",
                 hero_title: "La Grange des Balas",
                 hero_subtitle: "Guesthouse in the Pilat Regional Natural Park",
-                about_title: "A place full of history",
+                about_title: "A place full of history at the Balasserie hamlet",
                 about_p1: "The \"balas\" once referred to the broom plants used to make brooms. It is also the name of the family who lived in this farm since the 15th century and gave its name to the hamlet.",
-                about_p2: "For nature lovers, our guesthouse is located in the Pilat Regional Natural Park, a privileged place for beautiful hikes or bike rides.",
-                gite_title: "The comfort of a fully equipped guesthouse",
+                about_p2: "For nature lovers, our guesthouse is located in the Pilat Regional Natural Park, a privileged place for beautiful hikes or bike rides starting from the house.",
+                gite_title: "The comfort of a fully equipped guesthouse for 8 people",
                 gite_p1: "The guesthouse includes a large living-dining room, a fully equipped kitchen, and two bathrooms for your comfort. Mosquito nets on windows ensure peaceful nights.",
                 gite_rooms_title: "Four bedrooms for 6 to 8 people:",
                 gite_room1: "One double bed 160x190 cm",
@@ -440,17 +468,17 @@
                 gite_p3: "On request: access to a bike shed, a laundry room, and a summer dining area.",
                 gallery_title: "Discover the guesthouse in pictures",
                 gallery_interior: "Interior",
-                gallery_exterior: "Exterior",
-                amenities_title: "At a glance",
+                gallery_exterior: "Exterior and view of the Pilat",
+                amenities_title: "The guesthouse amenities at a glance",
                 amenities_capacity_val: "8 people",
                 amenities_rooms_val: "4 bedrooms",
                 amenities_terrace_val: "Terrace with a view",
                 amenities_bike_val: "Bike shed",
                 amenities_pets_val: "Pets not allowed",
                 amenities_parties_val: "Parties not suitable",
-                activities_title: "Activities and Discoveries",
+                activities_title: "Activities and Discoveries in the Pilat",
                 activities_intro: "The guesthouse provides all necessary documents to explore the region.",
-                activities_intro2: "Here are a few suggestions:",                
+                activities_intro2: "Here are a few suggestions:",               
                 activities_item1_title: "Local Hikes",
                 activities_item1_desc: "Explore the many paths of the town and discover its natural and historical curiosities.",
                 activities_item2_title: "Sainte-Croix-en-Jarez",
@@ -463,15 +491,15 @@
                 activities_item5_desc: "Enjoy the landscapes and activities offered by the park, with a stop at Pélussin.",
                 activities_item6_title: "Wildlife Park",
                 activities_item6_desc: "An ideal family outing to discover the wildlife park of Saint-Martin-la-Plaine.",
-                rates_title: "Rates & Availability",
+                rates_title: "Rates & Availability of our Guesthouse",
                 rates_opening_dates: "We welcome you from May 1st to October 31st.",
                 rates_item1_label: "2-night package (minimum)",
                 rates_item2_label: "Additional night",
                 rates_item3_label: "Full week (7 nights)",
                 rates_item4_label: "Additional week",
-                rates_item4_label: "End of stay cleaning (optional)",
+                rates_item5_label: "End of stay cleaning (optional)",
                 rates_included_info: "These rates are all-inclusive (bed linen, towels, water, electricity, Wifi) excluding the tourist tax which will be extra.",
-                contact_title: "Contact Us",
+                contact_title: "Contact and Booking",
                 contact_host_intro: "Your host, <strong>Marie-Noëlle BERLIOZ</strong>, will be delighted to welcome you.",
                 contact_host_languages: "Languages spoken: French, English, Spanish."
             },
@@ -485,10 +513,10 @@
                 nav_contact: "Contacto",
                 hero_title: "La Grange des Balas",
                 hero_subtitle: "Casa rural en el Parque Natural Regional de Pilat",
-                about_title: "Un lugar lleno de historia",
+                about_title: "Un lugar lleno de historia en la aldea de la Balasserie",
                 about_p1: "Las \"balas\" designaban antiguamente las retamas con las que se hacían las escobas. Es también el nombre de la familia que vivió en esta granja desde el siglo XV y que dio su nombre a la aldea.",
-                about_p2: "Para los amantes de la naturaleza, nuestra casa rural está situada en el Parque Natural Regional del Pilat, un lugar privilegiado para hermosos paseos a pie o en bicicleta.",
-                gite_title: "La comodidad de una casa rural totalmente equipada",
+                about_p2: "Para los amantes de la naturaleza, nuestra casa rural está situada en el Parque Natural Regional del Pilat, un lugar privilegiado para hermosos paseos a pie o en bicicleta desde la casa.",
+                gite_title: "La comodidad de una casa rural totalmente equipada para 8 personas",
                 gite_p1: "La casa rural cuenta con un gran salón-comedor, una cocina totalmente equipada y dos cuartos de baño para su comodidad. Las mosquiteras en las ventanas garantizan noches tranquilas.",
                 gite_rooms_title: "Cuatro habitaciones para 6 a 8 personas:",
                 gite_room1: "Una cama doble de 160x190 cm",
@@ -498,17 +526,17 @@
                 gite_p3: "Bajo petición: acceso a un cobertizo para vos bicicletas, un lavadero y un comedor de verano.",
                 gallery_title: "Descubra la casa en imágenes",
                 gallery_interior: "Interior",
-                gallery_exterior: "Exterior",
-                amenities_title: "En resumen",
+                gallery_exterior: "Exterior y vistas al Pilat",
+                amenities_title: "Los servicios de la casa rural en resumen",
                 amenities_capacity_val: "8 personas",
                 amenities_rooms_val: "4 habitaciones",
                 amenities_terrace_val: "Terraza con vistas",
                 amenities_bike_val: "Cobertizo para bicis",
                 amenities_pets_val: "No se admiten animales",
                 amenities_parties_val: "Fiestas no adecuadas",
-                activities_title: "Actividades y Descubrimientos",
+                activities_title: "Actividades y Descubrimientos en el Pilat",
                 activities_intro: "La casa rural pone a su disposición todos los documentos necesarios para explorar la región.",
-                activities_intro2: "Aquí algunas sugerencias:",                
+                activities_intro2: "Aquí algunas sugerencias:",               
                 activities_item1_title: "Senderismo local",
                 activities_item1_desc: "Explore los numerosos senderos del municipio y descubra sus curiosidades naturales e históricas.",
                 activities_item2_title: "Sainte-Croix-en-Jarez",
@@ -521,7 +549,7 @@
                 activities_item5_desc: "Disfrute de los paisajes y actividades que ofrece el parque, con una parada en Pélussin.",
                 activities_item6_title: "Parque de Animales",
                 activities_item6_desc: "Una salida familiar ideal para descubrir el parque de animales de Saint-Martin-la-Plaine.",
-                rates_title: "Tarifas y Disponibilidad",
+                rates_title: "Tarifas y Disponibilidad de nuestra Casa Rural",
                 rates_opening_dates: "Le damos la bienvenida del 1 de mayo al 31 de octubre.",
                 rates_item1_label: "Paquete 2 noches (mínimo)",
                 rates_item2_label: "Noche adicional",
@@ -529,13 +557,12 @@
                 rates_item4_label: "Semana adicional",
                 rates_item5_label: "Limpieza de final de estancia (opcional)",
                 rates_included_info: "Estas tarifas son todo incluido (ropa de cama, toallas, agua, electricidad, Wifi) excepto la tasa turística que se cobrará aparte.",
-                contact_title: "Contáctenos",
+                contact_title: "Contacto y Reserva",
                 contact_host_intro: "Su anfitriona, <strong>Marie-Noëlle BERLIOZ</strong>, estará encantada de recibirle.",
                 contact_host_languages: "Idiomas hablados: Francés, Inglés, Español."
             }
         };
 
-        // --- Language Switcher Logic ---
         const langButtons = {
             fr: document.getElementById('lang-fr'),
             en: document.getElementById('lang-en'),
@@ -543,31 +570,27 @@
         };
 
         const changeLanguage = (lang) => {
-            // Set html lang attribute
             document.documentElement.lang = lang;
 
-            // Update button styles
             Object.values(langButtons).forEach(btn => btn.classList.remove('active'));
             langButtons[lang].classList.add('active');
 
-            // Update text content
             const elementsToTranslate = document.querySelectorAll('[data-translate]');
             elementsToTranslate.forEach(el => {
                 const key = el.getAttribute('data-translate');
-                if (translations[lang][key]) {
+                if (translations[lang] && translations[lang][key]) {
                     el.innerHTML = translations[lang][key];
                 }
             });
         };
 
         Object.keys(langButtons).forEach(lang => {
-            langButtons[lang].addEventListener('click', () => changeLanguage(lang));
+            if(langButtons[lang]) {
+                langButtons[lang].addEventListener('click', () => changeLanguage(lang));
+            }
         });
 
-        // --- Sticky Header on Scroll ---
         const header = document.getElementById('header');
-        let lastScrollY = window.scrollY;
-        
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 header.classList.add('py-2', 'shadow-lg');
@@ -576,7 +599,6 @@
                 header.classList.remove('py-2', 'shadow-lg');
                 header.classList.add('py-4');
             }
-            lastScrollY = window.scrollY;
         });
     });
     </script>
