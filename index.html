@@ -96,14 +96,13 @@
         html {
             scroll-behavior: smooth;
         }
-        /* Gallery Modal specific styles - Updated for Carousel */
         .gallery-modal {
             position: fixed;
             top: 0;
             left: 0;
             width: 100vw;
             height: 100vh;
-            background-color: rgba(0, 0, 0, 0.9); /* Darker overlay for better image focus */
+            background-color: rgba(0, 0, 0, 0.9);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -118,17 +117,17 @@
         }
         .gallery-modal-content {
             position: relative;
-            background-color: #000; /* Black background for images */
+            background-color: #000;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 95vw; /* Allow more width for the image */
-            max-height: 95vh; /* Allow more height for the image */
+            max-width: 95vw;
+            max-height: 95vh;
             width: 100%;
             height: 100%;
-            border-radius: 0.75rem; /* Keep rounded corners for the modal */
-            overflow: hidden; /* Hide overflow from image */
+            border-radius: 0.75rem;
+            overflow: hidden;
         }
         .gallery-modal-close {
             position: absolute;
@@ -136,15 +135,15 @@
             right: 1rem;
             background: none;
             border: none;
-            font-size: 2.5rem; /* Larger close button */
-            color: white; /* White for contrast */
+            font-size: 2.5rem;
+            color: white;
             cursor: pointer;
             z-index: 10;
             border-radius: 50%;
             transition: background-color 0.2s ease;
         }
         .gallery-modal-close:hover {
-            color: rgb(171, 167, 167); /* White for contrast */
+            color: rgb(171, 167, 167);
         }
 
         .gallery-navigation-button {
@@ -265,12 +264,12 @@
 
         <!-- =========== Gîte Details Section =========== -->
         <section id="gite" class="mb-24 scroll-mt-20 bg-white p-8 md:p-12 rounded-lg shadow-lg">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center" data-translate="gite_title">Le confort d'un gîte entièrement équipé</h2>
             <div class="grid md:grid-cols-2 gap-12 items-start">
                 <div class="rounded-lg overflow-hidden shadow-xl">
                    <img src="./images/interieur_1h.webp" alt="Grand salon du gîte avec poutres apparentes, canapés et grande table à manger" class="w-full h-full object-cover">
                 </div>
                 <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center" data-translate="gite_title">Le confort d'un gîte entièrement équipé</h2>
                     <p class="text-gray-600 mb-6" data-translate="gite_p1">
                         Le gîte comporte un grand salon-salle à manger, une cuisine entièrement équipée, et deux salles de bain pour votre confort. Des moustiquaires aux fenêtres vous assurent des nuits paisibles.
                     </p>
@@ -293,14 +292,11 @@
         <!-- =========== Gallery Section =========== -->
         <section id="gallery" class="mb-24 scroll-mt-20">
             <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center" data-translate="gallery_title">Découvrez le gîte en images</h2>
-            
             <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_interior">Intérieur</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <!-- Main image for interior -->
-                <div class="rounded-lg overflow-hidden shadow-xl h-64 sm:h-80 md:h-96">
+                <div class="rounded-lg overflow-hidden shadow-xl h-64 sm:h-80 md:h-96" style="height: 25rem;">
                     <img src="./images/interieur_1.webp" alt="Cuisine équipée du gîte La Grange des Balas" class="w-full h-full object-cover">
                 </div>
-                <!-- Smaller images for interior -->
                 <div class="grid grid-cols-2 gap-4">
                     <div class="rounded-lg overflow-hidden shadow-xl h-32 sm:h-40 md:h-48">
                         <img src="./images/interieur_2.webp" alt="Chambre avec lit double et murs en pierre" class="w-full h-full object-cover">
@@ -324,11 +320,9 @@
 
             <h3 class="text-2xl font-semibold text-gray-700 mb-6" data-translate="gallery_exterior">Extérieur</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <!-- Main image for exterior -->
-                <div class="rounded-lg overflow-hidden shadow-xl h-64 sm:h-80 md:h-96">
+                <div class="rounded-lg overflow-hidden shadow-xl h-64 sm:h-80 md:h-96" style="height: 25rem;">
                     <img src="./images/exterieur_1.webp" alt="Façade en pierre de la ferme rénovée La Grange des Balas" class="w-full h-full object-cover">
                 </div>
-                <!-- Smaller images for exterior -->
                 <div class="grid grid-cols-2 gap-4">
                     <div class="rounded-lg overflow-hidden shadow-xl h-32 sm:h-40 md:h-48">
                         <img src="./images/exterieur_2.webp" alt="Vue depuis la terrasse du gîte" class="w-full h-full object-cover">
@@ -342,7 +336,6 @@
 
                     <div class="rounded-lg overflow-hidden shadow-xl h-32 sm:h-40 md:h-48 relative">
                         <img src="./images/exterieur_5.webp" alt="Le hameau de la Balasserie à Longes, environnement du gîte" class="w-full h-full object-cover">
-                        <!-- View more button overlay -->
                         <button style="transform: scale(0.80);" class="absolute inset-0 bg-black/50 text-white flex flex-col items-center justify-center rounded-lg hover:bg-black/70 transition-all duration-300 view-all-btn" data-gallery-type="exterior">
                             <i class="fa-solid fa-images text-3xl mb-2"></i>
                             <span class="text-xl font-bold" data-translate="view_all_photos">Voir toutes les photos</span>
@@ -453,7 +446,7 @@
                 </li>
             </ul>
             <p class="mt-6 text-sm text-center text-gray-500" data-translate="rates_included_info">
-                Ces tarifs sont tout compris (fourniture des draps, linge de toilette, eau, électricité, Wifi) hors-mis la taxe de séjour.
+                Ces tarifs sont tout compris (fourniture des draps, linge de toilette, eau, électricité, Wifi) hormis la taxe de séjour.
             </p>
         </div>
     </section>
@@ -522,14 +515,12 @@
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
             <div id="gallery-thumbnails" class="mt-4">
-                <!-- Thumbnails will be dynamically loaded here -->
             </div>
         </div>
     </div>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Phone and Email Obfuscation
         const user = 'lagrangedesbalas';
         const domain = 'gite-pilat.fr';
         const emailElement = document.getElementById('email-contact');
@@ -551,7 +542,6 @@
             phoneElement.innerHTML = `<a href="tel:${phoneNumberLink}" class="hover:underline">${phoneNumberDisplay}</a>`;
         }
 
-        // Language Translation
         const translations = {
             'fr': {
                 nav_title: "La Grange des Balas",
@@ -609,7 +599,7 @@
                 rates_item3_label: "Semaine complète (7 nuits)",
                 rates_item4_label: "Semaine supplémentaire",
                 rates_item5_label: "Ménage fin de séjour (optionnel)",
-                rates_included_info: "Ces tarifs sont tout compris (fourniture des draps, linge de toilette, eau, électricité, Wifi) hors-mis la taxe de séjour.",
+                rates_included_info: "Ces tarifs sont tout compris (fourniture des draps, linge de toilette, eau, électricité, Wifi) hormis la taxe de séjour.",
                 contact_title: "Contact et Réservation",
                 contact_host_intro: "Votre hôte, <strong>Marie-Noëlle BERLIOZ</strong>, sera ravie de vous accueillir.",
                 contact_host_languages: "Langues parlées : Français, Anglais, Espagnol."
@@ -776,7 +766,6 @@
             }
         });
 
-        // Gallery Modal Logic - Updated for Carousel
         const galleryModal = document.getElementById('gallery-modal');
         const mainGalleryImage = document.getElementById('main-gallery-image');
         const galleryThumbnails = document.getElementById('gallery-thumbnails');
@@ -785,10 +774,9 @@
         const galleryModalCloseBtn = galleryModal.querySelector('.gallery-modal-close');
         const viewAllButtons = document.querySelectorAll('.view-all-btn');
 
-        let currentImages = []; // Stores the currently displayed set of images (interior or exterior)
-        let currentImageIndex = 0; // Index of the currently visible image in the modal
+        let currentImages = [];
+        let currentImageIndex = 0;
 
-        // Define all image data
         const allImages = {
             interior: [
                 { src: './images/interieur_1.webp', alt: '' },
@@ -809,7 +797,8 @@
                 { src: './images/interieur_16.webp', alt: '' },
                 { src: './images/interieur_17.webp', alt: '' },
                 { src: './images/interieur_18.webp', alt: '' },
-                { src: './images/interieur_19.webp', alt: '' }
+                { src: './images/interieur_19.webp', alt: '' },
+                { src: './images/interieur_20.webp', alt: '' }
                 ],
             exterior: [
                 { src: './images/exterieur_1.webp', alt: '' },
@@ -827,27 +816,22 @@
                 { src: './images/exterieur_13.webp', alt: '' },
                 { src: './images/exterieur_14.webp', alt: '' },
                 { src: './images/exterieur_15.webp', alt: '' },
-                { src: './images/exterieur_16.webp', alt: '' },
-                { src: './images/exterieur_17.webp', alt: '' },
-                { src: './images/exterieur_18.webp', alt: '' }
+                { src: './images/exterieur_16.webp', alt: '' }
                 ]
             };
 
         /**
-         * Displays a specific image in the main view and highlights its thumbnail.
-         * @param {number} index - The index of the image to display.
+         * @param {number} index
          */
         function showImage(index) {
             if (currentImages.length === 0) return;
 
-            // Ensure index loops around
             currentImageIndex = (index + currentImages.length) % currentImages.length;
 
             const image = currentImages[currentImageIndex];
             mainGalleryImage.src = image.src;
             mainGalleryImage.alt = image.alt;
 
-            // Update active thumbnail
             const thumbnails = galleryThumbnails.querySelectorAll('img');
             thumbnails.forEach((thumb, i) => {
                 if (i === currentImageIndex) {
@@ -860,11 +844,10 @@
         }
 
         /**
-         * Populates the gallery modal with thumbnails for a specific type of images.
-         * @param {string} type - The type of images to display ('interior' or 'exterior').
+         * @param {string} type
          */
         function populateGalleryThumbnails(type) {
-            galleryThumbnails.innerHTML = ''; // Clear previous thumbnails
+            galleryThumbnails.innerHTML = '';
             currentImages = allImages[type];
 
             if (currentImages) {
@@ -872,11 +855,10 @@
                     const imgElement = document.createElement('img');
                     imgElement.src = image.src;
                     imgElement.alt = image.alt;
-                    imgElement.dataset.index = index; // Store index for click handling
-                    imgElement.loading = 'lazy'; // Lazy load for performance
+                    imgElement.dataset.index = index;
+                    imgElement.loading = 'lazy';
                     galleryThumbnails.appendChild(imgElement);
 
-                    // Add click listener to each thumbnail
                     imgElement.addEventListener('click', (event) => {
                         showImage(parseInt(event.target.dataset.index));
                     });
@@ -885,27 +867,22 @@
         }
 
         /**
-         * Opens the gallery modal for a specific type of images.
-         * @param {string} type - The type of images to display.
+         * @param {string} type
          */
         function openGalleryModal(type) {
-            populateGalleryThumbnails(type); // Populate thumbnails first
-            showImage(0); // Show the first image of the selected category
+            populateGalleryThumbnails(type);
+            showImage(0);
             galleryModal.classList.add('show');
             galleryModal.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling on the body
+            document.body.style.overflow = 'hidden';
         }
 
-        /**
-         * Closes the gallery modal.
-         */
         function closeGalleryModal() {
             galleryModal.classList.remove('show');
             galleryModal.setAttribute('aria-hidden', 'true');
-            document.body.style.overflow = ''; // Restore body scrolling
+            document.body.style.overflow = '';
         }
 
-        // Event listeners for "View All" buttons
         viewAllButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const galleryType = button.getAttribute('data-gallery-type');
@@ -913,28 +890,23 @@
             });
         });
 
-        // Event listeners for navigation arrows
         galleryPrevBtn.addEventListener('click', () => showImage(currentImageIndex - 1));
         galleryNextBtn.addEventListener('click', () => showImage(currentImageIndex + 1));
 
-        // Event listener for the modal close button
         galleryModalCloseBtn.addEventListener('click', closeGalleryModal);
 
-        // Event listener for Escape key to close modal
             document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape' && galleryModal.classList.contains('show')) {
                 closeGalleryModal();
             }
 
-            // --- DEBUT DE LA MODIFICATION POUR LA NAVIGATION CLAVIER ---
-            if (galleryModal.classList.contains('show')) { // S'assurer que la galerie est ouverte
-                if (event.key === 'ArrowLeft') { // Flèche gauche
+            if (galleryModal.classList.contains('show')) {
+                if (event.key === 'ArrowLeft') {
                     showImage(currentImageIndex - 1);
-                } else if (event.key === 'ArrowRight') { // Flèche droite
+                } else if (event.key === 'ArrowRight') {
                     showImage(currentImageIndex + 1);
                 }
             }
-            // --- FIN DE LA MODIFICATION ---
         });
 
     });
