@@ -13,9 +13,10 @@
 {
   "@context": "https://schema.org",
   "@type": "VacationRental",
+  "additionalType": "https://schema.org/House", 
   "identifier": "https://gite-pilat.fr/",
   "name": "La Grange des Balas",
-  "description": "Gîte pour 8 personnes situé dans le hameau de la Balasserie à Longes (69420), au sein du Parc Naturel Régional du Pilat. Idéal pour des séjours en famille ou entre amis, avec toutes les commodités modernes et un accès facile aux activités de plein air.",
+  "description": "Gîte de 177 m² pour 6 à 8 personnes situé dans le hameau de la Balasserie à Longes (69420), au sein du Parc Naturel Régional du Pilat. Il dispose d'un grand salon-salle à manger, d'une cuisine entièrement équipée, et de deux salles de bain. Des moustiquaires aux fenêtres assurent des nuits paisibles. Les soirées festives ne sont pas adaptées. Accès Wi-Fi et terrasse avec vue. Une remise à vélos, une buanderie et une salle à manger d'été sont disponibles sur demande.",
   "image": [
     "https://gite-pilat.fr/images/exterieur_1.webp",
     "https://gite-pilat.fr/images/exterieur_2.webp",
@@ -46,65 +47,100 @@
   "occupancy": {
     "@type": "QuantitativeValue",
     "maxValue": 8,
+    "minValue": 6, 
     "unitText": "personnes"
   },
   "petsAllowed": false,
   "amenityFeature": [
-    { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Cuisine entièrement équipée", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Terrasse avec vue", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Remise à vélos", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Animaux", "value": false },
-    { "@type": "LocationFeatureSpecification", "name": "Ménage en fin de séjour (optionnel)", "value": true }
+    { "@type": "LocationFeatureSpecification", "name": "Moustiquaires aux fenêtres", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Animaux non acceptés", "value": true } // J'ai changé "Animaux" false en "Animaux non acceptés" true
   ],
   "containsPlace": [
-      {
+    {
         "@type": "Room", 
         "name": "Salon-salle à manger",
-        "description": "Grand espace de vie lumineux combinant salon et salle à manger, idéal pour la convivialité. Il est équipé de moustiquaires aux fenêtres pour votre confort."
+        "description": "Grand espace de vie lumineux combinant salon et salle à manger, idéal pour la convivialité. Il est équipé de moustiquaires aux fenêtres pour votre confort.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 8, "unitText": "personnes" }, // Capacité d'accueil pour le repas/salon
+        "numberOfBedrooms": 0,
+        "numberOfBathroomsTotal": 0
     },
     {
         "@type": "Room", 
         "name": "Cuisine entièrement équipée",
-        "description": "Cuisine moderne et fonctionnelle, entièrement équipée pour préparer tous vos repas. Elle dispose d'une cuisinière, d'un four, d'un micro-ondes, d'un réfrigérateur et d'un lave-vaisselle."
+        "description": "Cuisine moderne et fonctionnelle, entièrement équipée pour préparer tous vos repas. Elle dispose d'une cuisinière, d'un four, d'un micro-ondes, d'un réfrigérateur, d'un lave-vaisselle, d'une cafetière et d'une bouilloire.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 0, "unitText": "personnes" }, // Pas de couchage ici
+        "numberOfBedrooms": 0,
+        "numberOfBathroomsTotal": 0
     },
     {
         "@type": "Room", 
         "name": "Salle de bain principale",
-        "description": "Première salle de bain, lumineuse et spacieuse, avec douche et/ou baignoire."
+        "description": "Première salle de bain, lumineuse et spacieuse, avec douche et/ou baignoire.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 0, "unitText": "personnes" }, // Pas de couchage ici
+        "numberOfBedrooms": 0,
+        "numberOfBathroomsTotal": 1 
     },
     {
-        "@type": "Room",
+        "@type": "Room", 
         "name": "Deuxième salle de bain",
-        "description": "Une salle de bain supplémentaire pour un confort optimal."
+        "description": "Une salle de bain supplémentaire pour un confort optimal.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 0, "unitText": "personnes" }, // Pas de couchage ici
+        "numberOfBedrooms": 0,
+        "numberOfBathroomsTotal": 1 
     },
     {
         "@type": "Room",
         "name": "Chambre 1 (Chambre principale)",
-        "description": "Chambre confortable avec un lit double de 160x190 cm, assurant des nuits paisibles grâce aux moustiquaires."
+        "description": "Chambre confortable avec un lit double de 160x190 cm, assurant des nuits paisibles grâce aux moustiquaires.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 2, "unitText": "personnes" },
+        "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
+        "numberOfBedrooms": 1,
+        "numberOfBathroomsTotal": 0
     },
     {
         "@type": "Room",
         "name": "Chambre 2",
-        "description": "Chambre avec un lit double de 140x190 cm, parfaite pour un couple."
+        "description": "Chambre avec un lit double de 140x190 cm, parfaite pour un couple.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 2, "unitText": "personnes" },
+        "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
+        "numberOfBedrooms": 1,
+        "numberOfBathroomsTotal": 0
     },
     {
         "@type": "Room",
         "name": "Chambre 3",
-        "description": "Chambre avec un deuxième lit double de 140x190 cm, également avec moustiquaire."
+        "description": "Chambre avec un deuxième lit double de 140x190 cm, également avec moustiquaire.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 2, "unitText": "personnes" },
+        "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
+        "numberOfBedrooms": 1,
+        "numberOfBathroomsTotal": 0
     },
     {
         "@type": "Room",
         "name": "Chambre 4",
-        "description": "Chambre modulable avec deux lits gigognes de 80x190 cm, pouvant former un lit double, idéale pour les enfants ou des amis. Équipée de moustiquaires."
+        "description": "Chambre modulable avec deux lits gigognes de 80x190 cm, pouvant former deux lits doubles, idéale pour les enfants ou des amis. Équipée de moustiquaires.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 2, "unitText": "personnes" },
+        "bed": [
+            { "@type": "Bed", "name": "Lit gigogne (80x190)", "numberOfBeds": 2 },
+            { "@type": "Bed", "name": "Lit double (formé des lits gigognes)", "numberOfBeds": 1 } // Indique qu'ils peuvent former un double
+        ],
+        "numberOfBedrooms": 1,
+        "numberOfBathroomsTotal": 0
     },
     {
         "@type": "Room",
         "name": "Terrasse extérieure",
-        "description": "Magnifique terrasse extérieure offrant une vue imprenable, aménagée avec une table et des bancs en pierre, des parasols et des sièges de relaxation pour profiter du plein air."
+        "description": "Magnifique terrasse extérieure offrant une vue imprenable, aménagée avec une table et des bancs en pierre, des parasols et des sièges de relaxation pour profiter du plein air.",
+        "occupancy": { "@type": "QuantitativeValue", "maxValue": 8, "unitText": "personnes" }, // Capacité pour s'asseoir
+        "numberOfBedrooms": 0,
+        "numberOfBathroomsTotal": 0
     }
-],
+  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5", 
@@ -121,7 +157,8 @@
             "@type": "Rating",
             "ratingValue": "5"
         },
-        "reviewBody": "Un gîte magnifique, très bien équipé et parfait pour notre séjour en famille. La vue est superbe et l'hôte très accueillante."
+        "reviewBody": "Un gîte magnifique, très bien équipé et parfait pour notre séjour en famille. La vue est superbe et l'hôte très accueillante.",
+        "datePublished": "2025-06-22"
     }
   ]
 }
