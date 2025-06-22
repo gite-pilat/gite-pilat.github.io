@@ -8,7 +8,8 @@
     <meta name="keywords" content="gîte pilat, location de vacances pilat, gîte la balasserie, gîte 8 personnes, location saisonnière longes, gîte de groupe rhône, vacances nature, parc naturel régional du pilat, randonnée pilat">
     <link rel="canonical" href="https://gite-pilat.fr">
     <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
-    
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,7 +60,7 @@
     { "@type": "LocationFeatureSpecification", "name": "Moustiquaires aux fenêtres", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Animaux non acceptés", "value": true }
   ],
-  "containsPlace": [
+  "containsPlace": [ // Start of the single containsPlace array
     {
       "@type": "Room",
       "name": "Salon-salle à manger",
@@ -97,7 +98,7 @@
       "name": "Chambre 1 (Chambre principale)",
       "description": "Chambre confortable avec un lit double de 160x190 cm, assurant des nuits paisibles grâce aux moustiquaires.",
       "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
-      "bed": "Lit double",
+      "bed": { "@type": "BedDetails", "typeOfBed": "Lit double" },
       "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
       "numberOfBedrooms": 1,
       "numberOfBathroomsTotal": 0
@@ -107,7 +108,7 @@
       "name": "Chambre 2",
       "description": "Chambre avec un lit double de 140x190 cm, parfaite pour un couple.",
       "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
-      "bed": "Lit double",
+      "bed": { "@type": "BedDetails", "typeOfBed": "Lit double" },
       "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
       "numberOfBedrooms": 1,
       "numberOfBathroomsTotal": 0
@@ -117,7 +118,7 @@
       "name": "Chambre 3",
       "description": "Chambre avec un deuxième lit double de 140x190 cm, également avec moustiquaire.",
       "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
-      "bed": "Lit double",
+      "bed": { "@type": "BedDetails", "typeOfBed": "Lit double" },
       "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
       "numberOfBedrooms": 1,
       "numberOfBathroomsTotal": 0
@@ -127,7 +128,7 @@
       "name": "Chambre 4",
       "description": "Chambre modulable avec deux lits gigognes de 80x190 cm, pouvant former deux lits doubles, idéale pour les enfants ou des amis. Équipée de moustiquaires.",
       "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
-      "bed": "2 lits gigognes (80x190) ou 1 lit double",
+      "bed": { "@type": "BedDetails", "typeOfBed": "2 lits gigognes (80x190) ou 1 lit double" },
       "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
       "numberOfBedrooms": 1,
       "numberOfBathroomsTotal": 0
@@ -140,8 +141,7 @@
       "numberOfBedrooms": 0,
       "numberOfBathroomsTotal": 0
     }
-  ],
-  "aggregateRating": {
+  ], "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
     "reviewCount": "1"
