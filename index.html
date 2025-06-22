@@ -9,39 +9,51 @@
     <link rel="canonical" href="https://gite-pilat.fr">
     <link rel="icon" type="image/x-icon" href="./images/favicon.webp">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "VacationRental",
-      "name": "La Grange des Balas",
-      "description": "Gîte pour 8 personnes situé dans le hameau de la Balasserie à Longes (69420), au sein du Parc Naturel Régional du Pilat.",
-      "image": "https://gite-pilat.fr/images/exterieur_1.webp",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "805, route de la Balasserie",
-        "addressLocality": "Longes",
-        "postalCode": "69420",
-        "addressCountry": "FR"
-      },
-      "telephone": "+33785516474",
-      "priceRange": "€€",
-      "url": "https://gite-pilat.fr",
-      "numberOfRooms": 4,
-      "occupancy": {
-        "@type": "QuantitativeValue",
-        "maxValue": 8,
-        "unitText": "personnes"
-      },
-      "petsAllowed": false,
-      "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée" },
-        { "@type": "LocationFeatureSpecification", "name": "Wi-Fi" },
-        { "@type": "LocationFeatureSpecification", "name": "Terrasse avec vue" },
-        { "@type": "LocationFeatureSpecification", "name": "Remise à vélos" },
-        { "@type": "LocationFeatureSpecification", "name": "Parking gratuit" }
-      ]
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VacationRental",
+  "identifier": "https://gite-pilat.fr/",
+  "name": "La Grange des Balas",
+  "description": "Gîte pour 8 personnes situé dans le hameau de la Balasserie à Longes (69420), au sein du Parc Naturel Régional du Pilat.",
+  "image": [
+    "https://gite-pilat.fr/images/exterieur_1.webp",
+    "https://gite-pilat.fr/images/exterieur_2.webp",
+    "https://gite-pilat.fr/images/interieur_1.webp",
+    "https://gite-pilat.fr/images/interieur_2.webp"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "805, route de la Balasserie",
+    "addressLocality": "Longes",
+    "addressRegion": "Auvergne-Rhône-Alpes",
+    "postalCode": "69420",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "45.5061023",
+    "longitude": "4.6622564"
+  },
+  "telephone": "+33785516474",
+  "priceRange": "€€",
+  "url": "https://gite-pilat.fr",
+  "numberOfRooms": 4,
+  "occupancy": {
+    "@type": "QuantitativeValue",
+    "maxValue": 8,
+    "unitText": "personnes"
+  },
+  "petsAllowed": false,
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Terrasse avec vue", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Remise à vélos", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true }
+  ],
+}
+</script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     
