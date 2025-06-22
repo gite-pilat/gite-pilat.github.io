@@ -13,7 +13,7 @@
 {
   "@context": "https://schema.org",
   "@type": "VacationRental",
-  "additionalType": "https://schema.org/House", 
+  // "additionalType": "https://schema.org/House", // Supprimé pour corriger l'erreur critique
   "identifier": "https://gite-pilat.fr/",
   "name": "La Grange des Balas",
   "description": "Gîte de 177 m² pour 6 à 8 personnes situé dans le hameau de la Balasserie à Longes (69420), au sein du Parc Naturel Régional du Pilat. Il dispose d'un grand salon-salle à manger, d'une cuisine entièrement équipée, et de deux salles de bain. Des moustiquaires aux fenêtres assurent des nuits paisibles. Les soirées festives ne sont pas adaptées. Accès Wi-Fi et terrasse avec vue. Une remise à vélos, une buanderie et une salle à manger d'été sont disponibles sur demande.",
@@ -58,14 +58,16 @@
     { "@type": "LocationFeatureSpecification", "name": "Remise à vélos", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Moustiquaires aux fenêtres", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Animaux non acceptés", "value": true } // J'ai changé "Animaux" false en "Animaux non acceptés" true
+    { "@type": "LocationFeatureSpecification", "name": "Animaux non acceptés", "value": true } 
   ],
   "containsPlace": [
     {
         "@type": "Room", 
         "name": "Salon-salle à manger",
         "description": "Grand espace de vie lumineux combinant salon et salle à manger, idéal pour la convivialité. Il est équipé de moustiquaires aux fenêtres pour votre confort.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 8, "unitText": "personnes" }, // Capacité d'accueil pour le repas/salon
+        "occupancy": { "@type": "QuantitativeValue", "value": 8, "maxValue": 8, "unitText": "personnes" }, 
+        "bed": { "@type": "Bed", "numberOfBeds": 0 },
+        "amenityFeature": [],
         "numberOfBedrooms": 0,
         "numberOfBathroomsTotal": 0
     },
@@ -73,7 +75,9 @@
         "@type": "Room", 
         "name": "Cuisine entièrement équipée",
         "description": "Cuisine moderne et fonctionnelle, entièrement équipée pour préparer tous vos repas. Elle dispose d'une cuisinière, d'un four, d'un micro-ondes, d'un réfrigérateur, d'un lave-vaisselle, d'une cafetière et d'une bouilloire.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 0, "unitText": "personnes" }, // Pas de couchage ici
+        "occupancy": { "@type": "QuantitativeValue", "value": 0, "maxValue": 0, "unitText": "personnes" }, 
+        "bed": { "@type": "Bed", "numberOfBeds": 0 },
+        "amenityFeature": [],
         "numberOfBedrooms": 0,
         "numberOfBathroomsTotal": 0
     },
@@ -81,7 +85,9 @@
         "@type": "Room", 
         "name": "Salle de bain principale",
         "description": "Première salle de bain, lumineuse et spacieuse, avec douche et/ou baignoire.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 0, "unitText": "personnes" }, // Pas de couchage ici
+        "occupancy": { "@type": "QuantitativeValue", "value": 0, "maxValue": 0, "unitText": "personnes" }, 
+        "bed": { "@type": "Bed", "numberOfBeds": 0 },
+        "amenityFeature": [],
         "numberOfBedrooms": 0,
         "numberOfBathroomsTotal": 1 
     },
@@ -89,7 +95,9 @@
         "@type": "Room", 
         "name": "Deuxième salle de bain",
         "description": "Une salle de bain supplémentaire pour un confort optimal.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 0, "unitText": "personnes" }, // Pas de couchage ici
+        "occupancy": { "@type": "QuantitativeValue", "value": 0, "maxValue": 0, "unitText": "personnes" }, 
+        "bed": { "@type": "Bed", "numberOfBeds": 0 },
+        "amenityFeature": [],
         "numberOfBedrooms": 0,
         "numberOfBathroomsTotal": 1 
     },
@@ -97,8 +105,9 @@
         "@type": "Room",
         "name": "Chambre 1 (Chambre principale)",
         "description": "Chambre confortable avec un lit double de 160x190 cm, assurant des nuits paisibles grâce aux moustiquaires.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 2, "unitText": "personnes" },
+        "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
         "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
+        "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
         "numberOfBedrooms": 1,
         "numberOfBathroomsTotal": 0
     },
@@ -106,8 +115,9 @@
         "@type": "Room",
         "name": "Chambre 2",
         "description": "Chambre avec un lit double de 140x190 cm, parfaite pour un couple.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 2, "unitText": "personnes" },
+        "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
         "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
+        "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
         "numberOfBedrooms": 1,
         "numberOfBathroomsTotal": 0
     },
@@ -115,8 +125,9 @@
         "@type": "Room",
         "name": "Chambre 3",
         "description": "Chambre avec un deuxième lit double de 140x190 cm, également avec moustiquaire.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 2, "unitText": "personnes" },
+        "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
         "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
+        "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
         "numberOfBedrooms": 1,
         "numberOfBathroomsTotal": 0
     },
@@ -124,19 +135,19 @@
         "@type": "Room",
         "name": "Chambre 4",
         "description": "Chambre modulable avec deux lits gigognes de 80x190 cm, pouvant former deux lits doubles, idéale pour les enfants ou des amis. Équipée de moustiquaires.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 2, "unitText": "personnes" },
-        "bed": [
-            { "@type": "Bed", "name": "Lit gigogne (80x190)", "numberOfBeds": 2 },
-            { "@type": "Bed", "name": "Lit double (formé des lits gigognes)", "numberOfBeds": 1 } // Indique qu'ils peuvent former un double
-        ],
+        "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+        "bed": { "@type": "Bed", "name": "2 lits gigognes (80x190) ou 1 lit double", "numberOfBeds": 2 },
+        "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
         "numberOfBedrooms": 1,
         "numberOfBathroomsTotal": 0
     },
     {
-        "@type": "Room",
+        "@type": "Room", 
         "name": "Terrasse extérieure",
         "description": "Magnifique terrasse extérieure offrant une vue imprenable, aménagée avec une table et des bancs en pierre, des parasols et des sièges de relaxation pour profiter du plein air.",
-        "occupancy": { "@type": "QuantitativeValue", "maxValue": 8, "unitText": "personnes" }, // Capacité pour s'asseoir
+        "occupancy": { "@type": "QuantitativeValue", "value": 8, "maxValue": 8, "unitText": "personnes" }, 
+        "bed": { "@type": "Bed", "numberOfBeds": 0 },
+        "amenityFeature": [],
         "numberOfBedrooms": 0,
         "numberOfBathroomsTotal": 0
     }
