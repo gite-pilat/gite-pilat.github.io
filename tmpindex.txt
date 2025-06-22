@@ -1,0 +1,154 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VacationRental",
+  "identifier": "https://gite-pilat.fr/",
+  "name": "La Grange des Balas",
+  "description": "Gîte de 177 m² pour 6 à 8 personnes situé dans le hameau de la Balasserie à Longes (69420), au sein du Parc Naturel Régional du Pilat. Il dispose d'un grand salon-salle à manger, d'une cuisine entièrement équipée, et de deux salles de bain. Des moustiquaires aux fenêtres assurent des nuits paisibles. Les soirées festives ne sont pas adaptées. Accès Wi-Fi et terrasse avec vue. Une remise à vélos, une buanderie et une salle à manger d'été sont disponibles sur demande.",
+  "image": [
+    "https://gite-pilat.fr/images/exterieur_1.webp",
+    "https://gite-pilat.fr/images/exterieur_2.webp",
+    "https://gite-pilat.fr/images/interieur_1.webp",
+    "https://gite-pilat.fr/images/interieur_2.webp",
+    "https://gite-pilat.fr/images/exterieur_3.webp",
+    "https://gite-pilat.fr/images/exterieur_4.webp",
+    "https://gite-pilat.fr/images/interieur_3.webp",
+    "https://gite-pilat.fr/images/interieur_4.webp"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "805, route de la Balasserie",
+    "addressLocality": "Longes",
+    "addressRegion": "Auvergne-Rhône-Alpes",
+    "postalCode": "69420",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "45.5061023",
+    "longitude": "4.6622564"
+  },
+  "telephone": "+33785516474",
+  "priceRange": "€€",
+  "url": "https://gite-pilat.fr",
+  "numberOfRooms": 4,
+  "occupancy": {
+    "@type": "QuantitativeValue",
+    "maxValue": 8,
+    "minValue": 6,
+    "unitText": "personnes"
+  },
+  "petsAllowed": "no",
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Cuisine entièrement équipée", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Terrasse avec vue", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Remise à vélos", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Moustiquaires aux fenêtres", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Animaux non acceptés", "value": true }
+  ],
+  "containsPlace": [
+    {
+      "@type": "Room",
+      "name": "Salon-salle à manger",
+      "description": "Grand espace de vie lumineux combinant salon et salle à manger, idéal pour la convivialité. Il est équipé de moustiquaires aux fenêtres pour votre confort.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 8, "maxValue": 8, "unitText": "personnes" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 0
+    },
+    {
+      "@type": "Room",
+      "name": "Cuisine entièrement équipée",
+      "description": "Cuisine moderne et fonctionnelle, entièrement équipée pour préparer tous vos repas. Elle dispose d'une cuisinière, d'un four, d'un micro-ondes, d'un réfrigérateur, d'un lave-vaisselle, d'une cafetière et d'une bouilloire.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 1, "unitText": "personne" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 0
+    },
+    {
+      "@type": "Room",
+      "name": "Salle de bain principale",
+      "description": "Première salle de bain, lumineuse et spacieuse, avec douche et/ou baignoire.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 1, "unitText": "personne" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 1
+    },
+    {
+      "@type": "Room",
+      "name": "Deuxième salle de bain",
+      "description": "Une salle de bain supplémentaire pour un confort optimal.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 1, "unitText": "personne" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 1
+    },
+    {
+      "@type": "Room",
+      "name": "Chambre 1 (Chambre principale)",
+      "description": "Chambre confortable avec un lit double de 160x190 cm, assurant des nuits paisibles grâce aux moustiquaires.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+      "bed": { "@type": "BedDetails", "typeOfBed": "Lit double" },
+      "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 0
+    },
+    {
+      "@type": "Room",
+      "name": "Chambre 2",
+      "description": "Chambre avec un lit double de 140x190 cm, parfaite pour un couple.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+      "bed": { "@type": "BedDetails", "typeOfBed": "Lit double" },
+      "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 0
+    },
+    {
+      "@type": "Room",
+      "name": "Chambre 3",
+      "description": "Chambre avec un deuxième lit double de 140x190 cm, également avec moustiquaire.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+      "bed": { "@type": "BedDetails", "typeOfBed": "Lit double" },
+      "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 0
+    },
+    {
+      "@type": "Room",
+      "name": "Chambre 4",
+      "description": "Chambre modulable avec deux lits gigognes de 80x190 cm, pouvant former deux lits doubles, idéale pour les enfants ou des amis. Équipée de moustiquaires.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+      "bed": { "@type": "BedDetails", "typeOfBed": "2 lits gigognes (80x190) ou 1 lit double" },
+      "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 0
+    },
+    {
+      "@type": "Room",
+      "name": "Terrasse extérieure",
+      "description": "Magnifique terrasse extérieure offrant une vue imprenable, aménagée avec une table et des bancs en pierre, des parasols et des sièges de relaxation pour profiter du plein air.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 8, "maxValue": 8, "unitText": "personnes" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 0
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Robbie"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Un gîte magnifique, très bien équipé et parfait pour notre séjour en famille. La vue est superbe et l'hôte très accueillante.",
+      "datePublished": "2025-06-22"
+    }
+  ]
+}
+</script>
