@@ -46,10 +46,10 @@
   "occupancy": {
     "@type": "QuantitativeValue",
     "maxValue": 8,
-    "minValue": 6, 
+    "minValue": 6,
     "unitText": "personnes"
   },
-  "petsAllowed": false,
+  "petsAllowed": "no",
   "amenityFeature": [
     { "@type": "LocationFeatureSpecification", "name": "Cuisine entièrement équipée", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
@@ -57,115 +57,113 @@
     { "@type": "LocationFeatureSpecification", "name": "Remise à vélos", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Moustiquaires aux fenêtres", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Animaux non acceptés", "value": true } 
+    { "@type": "LocationFeatureSpecification", "name": "Animaux non acceptés", "value": true }
   ],
   "containsPlace": [
     {
-        "@type": "Room", 
-        "name": "Salon-salle à manger",
-        "description": "Grand espace de vie lumineux combinant salon et salle à manger, idéal pour la convivialité. Il est équipé de moustiquaires aux fenêtres pour votre confort.",
-        "occupancy": { "@type": "QuantitativeValue", "value": 8, "maxValue": 8, "unitText": "personnes" }, 
-        "amenityFeature": [], 
-        "numberOfBedrooms": 0,
-        "numberOfBathroomsTotal": 0
+      "@type": "Room",
+      "name": "Salon-salle à manger",
+      "description": "Grand espace de vie lumineux combinant salon et salle à manger, idéal pour la convivialité. Il est équipé de moustiquaires aux fenêtres pour votre confort.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 8, "maxValue": 8, "unitText": "personnes" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 0
     },
     {
-        "@type": "Room", 
-        "name": "Cuisine entièrement équipée",
-        "description": "Cuisine moderne et fonctionnelle, entièrement équipée pour préparer tous vos repas. Elle dispose d'une cuisinière, d'un four, d'un micro-ondes, d'un réfrigérateur, d'un lave-vaisselle, d'une cafetière et d'une bouilloire.",
-        "amenityFeature": [], 
-        "numberOfBedrooms": 0,
-        "numberOfBathroomsTotal": 0
+      "@type": "Room",
+      "name": "Cuisine entièrement équipée",
+      "description": "Cuisine moderne et fonctionnelle, entièrement équipée pour préparer tous vos repas. Elle dispose d'une cuisinière, d'un four, d'un micro-ondes, d'un réfrigérateur, d'un lave-vaisselle, d'une cafetière et d'une bouilloire.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 1, "unitText": "personne" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 0
     },
     {
-        "@type": "Room", 
-        "name": "Salle de bain principale",
-        "description": "Première salle de bain, lumineuse et spacieuse, avec douche et/ou baignoire.",
-        "amenityFeature": [], 
-        "numberOfBedrooms": 0,
-        "numberOfBathroomsTotal": 1 
+      "@type": "Room",
+      "name": "Salle de bain principale",
+      "description": "Première salle de bain, lumineuse et spacieuse, avec douche et/ou baignoire.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 1, "unitText": "personne" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 1
     },
     {
-        "@type": "Room", 
-        "name": "Deuxième salle de bain",
-        "description": "Une salle de bain supplémentaire pour un confort optimal.",
-        "amenityFeature": [], 
-        "numberOfBedrooms": 0,
-        "numberOfBathroomsTotal": 1 
+      "@type": "Room",
+      "name": "Deuxième salle de bain",
+      "description": "Une salle de bain supplémentaire pour un confort optimal.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 1, "unitText": "personne" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 1
     },
     {
-        "@type": "Room",
-        "name": "Chambre 1 (Chambre principale)",
-        "description": "Chambre confortable avec un lit double de 160x190 cm, assurant des nuits paisibles grâce aux moustiquaires.",
-        "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
-        "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
-        "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }], 
-        "numberOfBedrooms": 1,
-        "numberOfBathroomsTotal": 0
+      "@type": "Room",
+      "name": "Chambre 1 (Chambre principale)",
+      "description": "Chambre confortable avec un lit double de 160x190 cm, assurant des nuits paisibles grâce aux moustiquaires.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+      "bed": "Lit double",
+      "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 0
     },
     {
-        "@type": "Room",
-        "name": "Chambre 2",
-        "description": "Chambre avec un lit double de 140x190 cm, parfaite pour un couple.",
-        "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
-        "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
-        "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
-        "numberOfBedrooms": 1,
-        "numberOfBathroomsTotal": 0
+      "@type": "Room",
+      "name": "Chambre 2",
+      "description": "Chambre avec un lit double de 140x190 cm, parfaite pour un couple.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+      "bed": "Lit double",
+      "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 0
     },
     {
-        "@type": "Room",
-        "name": "Chambre 3",
-        "description": "Chambre avec un deuxième lit double de 140x190 cm, également avec moustiquaire.",
-        "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
-        "bed": { "@type": "Bed", "name": "Lit double", "numberOfBeds": 1 },
-        "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
-        "numberOfBedrooms": 1,
-        "numberOfBathroomsTotal": 0
+      "@type": "Room",
+      "name": "Chambre 3",
+      "description": "Chambre avec un deuxième lit double de 140x190 cm, également avec moustiquaire.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+      "bed": "Lit double",
+      "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 0
     },
     {
-        "@type": "Room",
-        "name": "Chambre 4",
-        "description": "Chambre modulable avec deux lits gigognes de 80x190 cm, pouvant former deux lits doubles, idéale pour les enfants ou des amis. Équipée de moustiquaires.",
-        "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
-        "bed": { "@type": "Bed", "name": "2 lits gigognes (80x190) ou 1 lit double", "numberOfBeds": 2 }, 
-        "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
-        "numberOfBedrooms": 1,
-        "numberOfBathroomsTotal": 0
+      "@type": "Room",
+      "name": "Chambre 4",
+      "description": "Chambre modulable avec deux lits gigognes de 80x190 cm, pouvant former deux lits doubles, idéale pour les enfants ou des amis. Équipée de moustiquaires.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 2, "maxValue": 2, "unitText": "personnes" },
+      "bed": "2 lits gigognes (80x190) ou 1 lit double",
+      "amenityFeature": [{ "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }],
+      "numberOfBedrooms": 1,
+      "numberOfBathroomsTotal": 0
     },
     {
-        "@type": "Room", 
-        "name": "Terrasse extérieure",
-        "description": "Magnifique terrasse extérieure offrant une vue imprenable, aménagée avec une table et des bancs en pierre, des parasols et des sièges de relaxation pour profiter du plein air.",
-        "occupancy": { "@type": "QuantitativeValue", "value": 8, "maxValue": 8, "unitText": "personnes" }, 
-        "amenityFeature": [], 
-        "numberOfBedrooms": 0,
-        "numberOfBathroomsTotal": 0
+      "@type": "Room",
+      "name": "Terrasse extérieure",
+      "description": "Magnifique terrasse extérieure offrant une vue imprenable, aménagée avec une table et des bancs en pierre, des parasols et des sièges de relaxation pour profiter du plein air.",
+      "occupancy": { "@type": "QuantitativeValue", "value": 8, "maxValue": 8, "unitText": "personnes" },
+      "numberOfBedrooms": 0,
+      "numberOfBathroomsTotal": 0
     }
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "5", 
-    "reviewCount": "1" 
+    "ratingValue": "5",
+    "reviewCount": "1"
   },
   "review": [
     {
-        "@type": "Review",
-        "author": {
-            "@type": "Person",
-            "name": "Robbie"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5"
-        },
-        "reviewBody": "Un gîte magnifique, très bien équipé et parfait pour notre séjour en famille. La vue est superbe et l'hôte très accueillante.",
-        "datePublished": "2025-06-22"
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Robbie"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Un gîte magnifique, très bien équipé et parfait pour notre séjour en famille. La vue est superbe et l'hôte très accueillante.",
+      "datePublished": "2025-06-22"
     }
   ]
 }
-
 </script>
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     
