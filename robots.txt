@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# Disallow common administrative and non-public areas to optimize crawl budget
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+Disallow: /trackback/
+Disallow: /*.zip$
+Disallow: /*.rar$
+Disallow: /*.tar.gz$
+Disallow: /*.bak$
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /search/
+Disallow: /tag/
+Disallow: /category/*/page/
+Disallow: /feed/
+Disallow: /*/feed/
+Disallow: /*/comment-page-*
+Disallow: /*?replytocom
+Disallow: /?s=*
+Disallow: /?attachment_id=
+Disallow: /attachment/
+
+# Allow essential files (CSS, JavaScript, images) that might be in disallowed directories for proper rendering
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+
+# Specify the sitemap location to help search engines discover all your important pages
+Sitemap: https://gite-pilat.fr/sitemap.xml
