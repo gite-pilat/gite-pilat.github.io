@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musées et Culture autour du Pilat | La Grange des Balas</title>
+    <meta name="description" content="Découvrez la richesse culturelle de la région avec le Musée gallo-romain de Saint-Romain-en-Gal et le Musée de la Mine de Saint-Étienne.">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @font-face { font-family: 'BrushScript'; src: url('../fonts/BrushScript.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+        body { font-family: 'Poppins', sans-serif; background-color: #F8F7F4; color: #333; }
+        .title { font-family: 'BrushScript', sans-serif; }
+        .lang-btn { transition: all 0.3s ease; background-color: #E0E0E0; color: #555; }
+        .lang-btn.active { background-color: #4CAF50; color: white; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .flag-icon { font-size: 1.1em; line-height: 1; }
+        .article-content h2 { font-size: 1.875rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; color: #1f2937; }
+        .article-content p { margin-bottom: 1.25rem; line-height: 1.8; color: #4b5563; }
+        .article-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #4b5563; }
+        .article-content a { color: #15803d; font-weight: 600; text-decoration: underline; transition: color 0.3s; }
+        .article-content a:hover { color: #166534; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-sm py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800 title" data-translate="nav_title">La Grange des Balas</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="/#about" class="text-gray-600 hover:text-green-800" data-translate="nav_about">Le Gîte</a>
+                <a href="/#gallery" class="text-gray-600 hover:text-green-800" data-translate="nav_gallery">Galerie</a>
+                <a href="/#amenities" class="text-gray-600 hover:text-green-800" data-translate="nav_amenities">Équipements</a>
+                <a href="/tourisme/index.html" class="text-green-800 font-semibold" data-translate="nav_activities">Activités</a>
+                <a href="/#rates" class="text-gray-600 hover:text-green-800" data-translate="nav_rates">Tarifs</a>
+                <a href="/#contact" class="text-gray-600 hover:text-green-800" data-translate="nav_contact">Contact</a>
+            </div>
+            <div class="flex items-center space-x-1 border border-gray-300 rounded-full p-1">
+                <button id="lang-fr" class="lang-btn active px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇫🇷</span> <span class="hidden md:inline">FR</span></button>
+                <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇬🇧</span> <span class="hidden md:inline">EN</span></button>
+                <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇪🇸</span> <span class="hidden md:inline">ES</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full h-[50vh] bg-gray-300 relative flex flex-col items-center justify-center">
+        <img src="../images/exterieur_1.webp" alt="Musées de la région Pilat" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 w-full max-w-4xl px-4 flex justify-between mb-8">
+            <a href="/#activities" class="bg-white/20 hover:bg-white/40 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base"><i class="fa-solid fa-home mr-2"></i><span data-translate="btn_home">Retour au site</span></a>
+            <a href="/tourisme/index.html" class="bg-green-700/80 hover:bg-green-700 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base"><i class="fa-solid fa-map-location-dot mr-2"></i><span data-translate="btn_activities">Toutes les activités</span></a>
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4" data-translate="article_title">Musées de la région</h1>
+            <p class="text-gray-200 text-lg md:text-xl font-light" data-translate="article_subtitle">De l'Antiquité à l'ère industrielle</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <article class="bg-white p-8 md:p-12 rounded-lg shadow-xl article-content">
+            <p data-translate="article_p1">Si la nature du Pilat est riche, le patrimoine culturel et historique des villes alentours l'est tout autant. Que vous soyez passionné d'archéologie, d'histoire sociale ou de savoir-faire industriel, la région regorge de musées de très grande qualité pour occuper vos journées.</p>
+            
+            <h2 data-translate="article_h2_1">L'Antiquité à Saint-Romain-en-Gal</h2>
+            <p data-translate="article_p2">Juste en face de Vienne, de l'autre côté du Rhône, s'étend l'un des plus grands complexes archéologiques gallo-romains de France. Le <a href='https://musee-site.rhone.fr/' target='_blank' rel='noopener'>Musée et sites archéologiques de Saint-Romain-en-Gal</a> permet de découvrir l'immense quartier résidentiel et commercial de la Vienne antique. Mosaïques spectaculaires, thermes et maquettes grandeur nature raviront petits et grands.</p>
+
+            <h2 data-translate="article_h2_2">L'ère industrielle à Saint-Étienne</h2>
+            <ul data-translate="article_list">
+                <li><strong>Le Puits Couriot / Parc-Musée de la Mine :</strong> Une visite immersive exceptionnelle. Descendez dans les galeries reconstituées et comprenez le rude quotidien des "Gueules Noires", les mineurs de charbon stéphanois. <a href='https://musee-mine.saint-etienne.fr/' target='_blank' rel='noopener'>Plus d'infos</a>.</li>
+                <li><strong>Le Musée d'Art et d'Industrie :</strong> Situé à Saint-Étienne, il met en valeur trois domaines qui ont fait la gloire de la ville : les armes, les cycles (vélos) et la rubanerie. <a href='https://mai.saint-etienne.fr/' target='_blank' rel='noopener'>Plus d'infos</a>.</li>
+                <li><strong>La Cité du Design :</strong> Installée sur le site de l'ancienne Manufacture d'Armes, elle célèbre la modernité et l'innovation stéphanoise.</li>
+            </ul>
+
+            <h2 data-translate="article_h2_3">Un conseil pour la famille</h2>
+            <p data-translate="article_p3">La plupart de ces musées proposent des ateliers ludiques pour les enfants, particulièrement pendant les vacances scolaires. Pensez à vérifier leurs programmations sur leurs sites respectifs pour réserver vos activités !</p>
+        </article>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const translations = {
+            'fr': {
+                nav_title: "La Grange des Balas", nav_about: "Le Gîte", nav_gallery: "Galerie", nav_amenities: "Équipements", nav_activities: "Activités", nav_rates: "Tarifs", nav_contact: "Contact",
+                btn_home: "Retour au gîte", btn_activities: "Toutes les activités",
+                article_title: "Musées de la région", article_subtitle: "De l'Antiquité à l'ère industrielle",
+                article_p1: "Si la nature du Pilat est riche, le patrimoine culturel et historique des villes alentours l'est tout autant. Que vous soyez passionné d'archéologie, d'histoire sociale ou de savoir-faire industriel, la région regorge de musées de très grande qualité pour occuper vos journées.",
+                article_h2_1: "L'Antiquité à Saint-Romain-en-Gal",
+                article_p2: "Juste en face de Vienne, de l'autre côté du Rhône, s'étend l'un des plus grands complexes archéologiques gallo-romains de France. Le <a href='https://musee-site.rhone.fr/' target='_blank' rel='noopener'>Musée et sites archéologiques de Saint-Romain-en-Gal</a> permet de découvrir l'immense quartier résidentiel et commercial de la Vienne antique.",
+                article_h2_2: "L'ère industrielle à Saint-Étienne",
+                article_list: "<li><strong>Le Puits Couriot / Parc-Musée de la Mine :</strong> Une visite immersive exceptionnelle. Descendez dans les galeries reconstituées et comprenez le rude quotidien des mineurs. <a href='https://musee-mine.saint-etienne.fr/' target='_blank' rel='noopener'>Plus d'infos</a>.</li><li><strong>Le Musée d'Art et d'Industrie :</strong> Il met en valeur trois domaines : les armes, les vélos et la rubanerie.</li><li><strong>La Cité du Design :</strong> Célèbre l'innovation stéphanoise.</li>",
+                article_h2_3: "Un conseil pour la famille",
+                article_p3: "La plupart de ces musées proposent des ateliers ludiques pour les enfants. Pensez à vérifier leurs programmations pour réserver vos activités !"
+            },
+            'en': {
+                nav_title: "La Grange des Balas", nav_about: "The Guesthouse", nav_gallery: "Gallery", nav_amenities: "Amenities", nav_activities: "Activities", nav_rates: "Rates", nav_contact: "Contact",
+                btn_home: "Back to home", btn_activities: "All activities",
+                article_title: "Regional Museums", article_subtitle: "From Antiquity to the Industrial Era",
+                article_p1: "If the nature of the Pilat is rich, the cultural and historical heritage of the surrounding cities is just as much. The region is full of high-quality museums.",
+                article_h2_1: "Antiquity in Saint-Romain-en-Gal",
+                article_p2: "Opposite Vienne, across the Rhône, lies one of the largest Gallo-Roman archaeological complexes in France. The <a href='https://musee-site.rhone.fr/' target='_blank' rel='noopener'>Saint-Romain-en-Gal Museum</a> allows you to discover spectacular mosaics and ancient thermal baths.",
+                article_h2_2: "The industrial era in Saint-Étienne",
+                article_list: "<li><strong>The Mining Museum (Puits Couriot):</strong> An exceptional immersive visit into the daily life of coal miners. <a href='https://musee-mine.saint-etienne.fr/' target='_blank' rel='noopener'>More info</a>.</li><li><strong>Museum of Art and Industry:</strong> Highlights local expertise in weapons, bicycles, and ribbon making.</li><li><strong>Cité du Design:</strong> Celebrates innovation and modern design.</li>",
+                article_h2_3: "A tip for families",
+                article_p3: "Most of these museums offer fun workshops for children. Remember to check their programs to book your activities!"
+            },
+            'es': {
+                nav_title: "La Grange des Balas", nav_about: "La Casa Rural", nav_gallery: "Galería", nav_amenities: "Servicios", nav_activities: "Actividades", nav_rates: "Tarifas", nav_contact: "Contacto",
+                btn_home: "Volver a la casa", btn_activities: "Todas las actividades",
+                article_title: "Museos de la región", article_subtitle: "De la Antigüedad a la era industrial",
+                article_p1: "El patrimonio cultural e histórico de las ciudades circundantes es inmenso. La región está llena de museos de gran calidad para sus días de visita.",
+                article_h2_1: "La Antigüedad en Saint-Romain-en-Gal",
+                article_p2: "Frente a Vienne se extiende uno de los complejos arqueológicos galorromanos más grandes de Francia. El <a href='https://musee-site.rhone.fr/' target='_blank' rel='noopener'>Museo de Saint-Romain-en-Gal</a> le permite descubrir mosaicos espectaculares y termas antiguas.",
+                article_h2_2: "La era industrial en Saint-Étienne",
+                article_list: "<li><strong>El Museo de la Mina (Puits Couriot):</strong> Una visita inmersiva excepcional a la vida de los mineros del carbón. <a href='https://musee-mine.saint-etienne.fr/' target='_blank' rel='noopener'>Más info</a>.</li><li><strong>Museo de Arte e Industria:</strong> Destaca la fabricación de armas, bicicletas y cintas.</li><li><strong>Cité du Design:</strong> Celebra la innovación y el diseño moderno.</li>",
+                article_h2_3: "Un consejo para familias",
+                article_p3: "La mayoría de estos museos ofrecen talleres divertidos para niños. ¡Recuerde consultar sus programas para reservar sus actividades!"
+            }
+        };
+        const langButtons = { fr: document.getElementById('lang-fr'), en: document.getElementById('lang-en'), es: document.getElementById('lang-es') };
+        const changeLanguage = (lang) => {
+            if (!translations[lang]) lang = 'fr';
+            document.documentElement.lang = lang;
+            Object.values(langButtons).forEach(btn => btn.classList.remove('active'));
+            if(langButtons[lang]) langButtons[lang].classList.add('active');
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+            elementsToTranslate.forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) el.innerHTML = translations[lang][key];
+            });
+            localStorage.setItem('site_lang', lang);
+        };
+        Object.keys(langButtons).forEach(lang => { if(langButtons[lang]) langButtons[lang].addEventListener('click', () => changeLanguage(lang)); });
+        changeLanguage(localStorage.getItem('site_lang') || 'fr');
+    });
+    </script>
+</body>
+</html>

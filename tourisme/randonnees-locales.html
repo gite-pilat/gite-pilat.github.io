@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randonnées locales dans le Pilat | La Grange des Balas</title>
+    <meta name="description" content="Découvrez les meilleurs sentiers de randonnée et itinéraires autour de Longes et dans le Parc Naturel Régional du Pilat.">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.webp">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        @font-face { font-family: 'BrushScript'; src: url('../fonts/BrushScript.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+        body { font-family: 'Poppins', sans-serif; background-color: #F8F7F4; color: #333; }
+        .title { font-family: 'BrushScript', sans-serif; }
+        .lang-btn { transition: all 0.3s ease; background-color: #E0E0E0; color: #555; }
+        .lang-btn.active { background-color: #4CAF50; color: white; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .flag-icon { font-size: 1.1em; line-height: 1; }
+        
+        .article-content h2 { font-size: 1.875rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; color: #1f2937; }
+        .article-content p { margin-bottom: 1.25rem; line-height: 1.8; color: #4b5563; }
+        .article-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #4b5563; }
+        .article-content a { color: #15803d; font-weight: 600; text-decoration: underline; transition: color 0.3s; }
+        .article-content a:hover { color: #166534; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-sm py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800 title" data-translate="nav_title">La Grange des Balas</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="/#about" class="text-gray-600 hover:text-green-800" data-translate="nav_about">Le Gîte</a>
+                <a href="/#gallery" class="text-gray-600 hover:text-green-800" data-translate="nav_gallery">Galerie</a>
+                <a href="/#amenities" class="text-gray-600 hover:text-green-800" data-translate="nav_amenities">Équipements</a>
+                <a href="/tourisme/index.html" class="text-green-800 font-semibold" data-translate="nav_activities">Activités</a>
+                <a href="/#rates" class="text-gray-600 hover:text-green-800" data-translate="nav_rates">Tarifs</a>
+                <a href="/#contact" class="text-gray-600 hover:text-green-800" data-translate="nav_contact">Contact</a>
+            </div>
+            <div class="flex items-center space-x-1 border border-gray-300 rounded-full p-1">
+                <button id="lang-fr" class="lang-btn active px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇫🇷</span> <span class="hidden md:inline">FR</span></button>
+                <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇬🇧</span> <span class="hidden md:inline">EN</span></button>
+                <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇪🇸</span> <span class="hidden md:inline">ES</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full h-[50vh] bg-gray-300 relative flex flex-col items-center justify-center">
+        <img src="../images/exterieur_1.webp" alt="Paysage du Pilat" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+        
+        <div class="relative z-10 w-full max-w-4xl px-4 flex justify-between mb-8">
+            <a href="/#activities" class="bg-white/20 hover:bg-white/40 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base">
+                <i class="fa-solid fa-home mr-2"></i><span data-translate="btn_home">Retour au site</span>
+            </a>
+            <a href="/tourisme/index.html" class="bg-green-700/80 hover:bg-green-700 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base">
+                <i class="fa-solid fa-map-location-dot mr-2"></i><span data-translate="btn_activities">Toutes les activités</span>
+            </a>
+        </div>
+
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4" data-translate="article_title">Randonnées locales</h1>
+            <p class="text-gray-200 text-lg md:text-xl font-light" data-translate="article_subtitle">À la découverte des sentiers du Pilat</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <article class="bg-white p-8 md:p-12 rounded-lg shadow-xl article-content">
+            <p data-translate="article_p1">Le Parc Naturel Régional du Pilat est un véritable paradis pour les amateurs de marche, de trail et de VTT. Depuis le gîte, situé sur la commune de Longes, une multitude de chemins s'offrent à vous, traversant des paysages variés entre vignobles, forêts de sapins et crêts panoramiques.</p>
+            
+            <h2 data-translate="article_h2_1">Des paysages à couper le souffle</h2>
+            <p data-translate="article_p2">La diversité topographique du Pilat permet à chacun de trouver son bonheur. Vous pourrez flâner dans les vergers de la vallée du Rhône ou grimper sur les hauteurs pour admirer une vue imprenable sur la chaîne des Alpes et le Mont Blanc par temps clair.</p>
+
+            <h2 data-translate="article_h2_2">Itinéraires recommandés</h2>
+            <ul data-translate="article_list">
+                <li><strong>Autour du gîte :</strong> Des boucles familiales au départ de Longes permettent de découvrir le petit patrimoine local (croix, chapelles, anciens lavoirs).</li>
+                <li><strong>Le Crêt de la Perdrix :</strong> Point culminant du Pilat (1431m), il offre des sentiers accessibles sur les crêtes avec un panorama à 360°.</li>
+                <li><strong>Le Saut du Gier :</strong> Une randonnée emblématique menant à une magnifique cascade (particulièrement impressionnante au printemps).</li>
+            </ul>
+
+            <h2 data-translate="article_h2_3">Préparez vos sorties</h2>
+            <p data-translate="article_p3">Nous tenons à votre disposition des cartes IGN et des topoguides dans le gîte. Pour préparer vos tracés à l'avance, nous vous conseillons les excellentes fiches interactives du <a href='https://www.pilat-tourisme.fr/decouvrir/randonnees' target='_blank' rel='noopener'>site Pilat Tourisme</a> ou l'application <a href='https://www.visorando.com/' target='_blank' rel='noopener'>Visorando</a>.</p>
+        </article>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const translations = {
+            'fr': {
+                nav_title: "La Grange des Balas", nav_about: "Le Gîte", nav_gallery: "Galerie", nav_amenities: "Équipements", nav_activities: "Activités", nav_rates: "Tarifs", nav_contact: "Contact",
+                btn_home: "Retour au gîte", btn_activities: "Toutes les activités",
+                article_title: "Randonnées locales", article_subtitle: "À la découverte des sentiers du Pilat",
+                article_p1: "Le Parc Naturel Régional du Pilat est un véritable paradis pour les amateurs de marche, de trail et de VTT. Depuis le gîte, situé sur la commune de Longes, une multitude de chemins s'offrent à vous, traversant des paysages variés entre vignobles, forêts de sapins et crêts panoramiques.",
+                article_h2_1: "Des paysages à couper le souffle",
+                article_p2: "La diversité topographique du Pilat permet à chacun de trouver son bonheur. Vous pourrez flâner dans les vergers de la vallée du Rhône ou grimper sur les hauteurs pour admirer une vue imprenable sur la chaîne des Alpes et le Mont Blanc par temps clair.",
+                article_h2_2: "Itinéraires recommandés",
+                article_list: "<li><strong>Autour du gîte :</strong> Des boucles familiales au départ de Longes permettent de découvrir le petit patrimoine local (croix, chapelles, anciens lavoirs).</li><li><strong>Le Crêt de la Perdrix :</strong> Point culminant du Pilat (1431m), il offre des sentiers accessibles sur les crêtes avec un panorama à 360°.</li><li><strong>Le Saut du Gier :</strong> Une randonnée emblématique menant à une magnifique cascade (particulièrement impressionnante au printemps).</li>",
+                article_h2_3: "Préparez vos sorties",
+                article_p3: "Nous tenons à votre disposition des cartes IGN et des topoguides dans le gîte. Pour préparer vos tracés à l'avance, nous vous conseillons les excellentes fiches interactives du <a href='https://www.pilat-tourisme.fr/decouvrir/randonnees' target='_blank' rel='noopener'>site Pilat Tourisme</a> ou l'application <a href='https://www.visorando.com/' target='_blank' rel='noopener'>Visorando</a>."
+            },
+            'en': {
+                nav_title: "La Grange des Balas", nav_about: "The Guesthouse", nav_gallery: "Gallery", nav_amenities: "Amenities", nav_activities: "Activities", nav_rates: "Rates", nav_contact: "Contact",
+                btn_home: "Back to home", btn_activities: "All activities",
+                article_title: "Local Hikes", article_subtitle: "Exploring the trails of the Pilat",
+                article_p1: "The Pilat Regional Nature Park is a true paradise for hiking, trail running, and mountain biking enthusiasts. From the guesthouse in Longes, a multitude of paths are available, crossing varied landscapes between vineyards, fir forests, and panoramic ridges.",
+                article_h2_1: "Breathtaking landscapes",
+                article_p2: "The topographical diversity of the Pilat means there's something for everyone. You can stroll through the orchards of the Rhône valley or climb the heights to admire breathtaking views of the Alps and Mont Blanc on a clear day.",
+                article_h2_2: "Recommended routes",
+                article_list: "<li><strong>Around the guesthouse:</strong> Family loops starting from Longes allow you to discover small local heritage sites.</li><li><strong>Le Crêt de la Perdrix:</strong> The highest point of the Pilat (1431m) offers accessible ridge trails with a 360° panorama.</li><li><strong>Le Saut du Gier:</strong> An iconic hike leading to a magnificent waterfall.</li>",
+                article_h2_3: "Plan your trips",
+                article_p3: "We have IGN maps and guidebooks available in the guesthouse. To prepare your routes in advance, we recommend the excellent interactive sheets on the <a href='https://www.pilat-tourisme.fr/decouvrir/randonnees' target='_blank' rel='noopener'>Pilat Tourisme website</a> or the <a href='https://www.visorando.com/' target='_blank' rel='noopener'>Visorando</a> app."
+            },
+            'es': {
+                nav_title: "La Grange des Balas", nav_about: "La Casa Rural", nav_gallery: "Galería", nav_amenities: "Servicios", nav_activities: "Actividades", nav_rates: "Tarifas", nav_contact: "Contacto",
+                btn_home: "Volver a la casa", btn_activities: "Todas las actividades",
+                article_title: "Senderismo local", article_subtitle: "Explorando los senderos del Pilat",
+                article_p1: "El Parque Natural Regional del Pilat es un verdadero paraíso para los amantes de la marcha, el trail y la bicicleta de montaña. Desde la casa rural, situada en el municipio de Longes, se abren multitud de caminos que atraviesan paisajes variados entre viñedos, bosques de abetos y crestas panorámicas.",
+                article_h2_1: "Paisajes impresionantes",
+                article_p2: "La diversidad topográfica del Pilat permite que cada uno encuentre su felicidad. Podrá pasear por los huertos del valle del Ródano o subir a las alturas para admirar una vista impresionante de la cordillera de los Alpes y el Mont Blanc en días despejados.",
+                article_h2_2: "Rutas recomendadas",
+                article_list: "<li><strong>Alrededor de la casa:</strong> Rutas familiares que parten de Longes permiten descubrir el pequeño patrimonio local.</li><li><strong>El Crêt de la Perdrix:</strong> El punto más alto del Pilat (1431m) ofrece senderos accesibles en las crestas con un panorama de 360°.</li><li><strong>El Saut du Gier:</strong> Una excursión emblemática que conduce a una magnífica cascada.</li>",
+                article_h2_3: "Planifique sus salidas",
+                article_p3: "Tenemos mapas IGN y guías a su disposición en la casa. Para preparar sus rutas con antelación, le recomendamos las excelentes fichas interactivas del <a href='https://www.pilat-tourisme.fr/decouvrir/randonnees' target='_blank' rel='noopener'>sitio web de Pilat Tourisme</a> o la aplicación <a href='https://www.visorando.com/' target='_blank' rel='noopener'>Visorando</a>."
+            }
+        };
+
+        const langButtons = { fr: document.getElementById('lang-fr'), en: document.getElementById('lang-en'), es: document.getElementById('lang-es') };
+        const changeLanguage = (lang) => {
+            if (!translations[lang]) lang = 'fr';
+            document.documentElement.lang = lang;
+            Object.values(langButtons).forEach(btn => btn.classList.remove('active'));
+            if(langButtons[lang]) langButtons[lang].classList.add('active');
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+            elementsToTranslate.forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) el.innerHTML = translations[lang][key];
+            });
+            localStorage.setItem('site_lang', lang);
+        };
+        Object.keys(langButtons).forEach(lang => { if(langButtons[lang]) langButtons[lang].addEventListener('click', () => changeLanguage(lang)); });
+        changeLanguage(localStorage.getItem('site_lang') || 'fr');
+    });
+    </script>
+</body>
+</html>

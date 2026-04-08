@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vienne la Romaine : Visite de la cité antique | La Grange des Balas</title>
+    <meta name="description" content="Explorez Vienne, célèbre cité antique sur le Rhône. Découvrez son Temple d'Auguste et Livie, son Théâtre Antique et son riche patrimoine gallo-romain.">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @font-face { font-family: 'BrushScript'; src: url('../fonts/BrushScript.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+        body { font-family: 'Poppins', sans-serif; background-color: #F8F7F4; color: #333; }
+        .title { font-family: 'BrushScript', sans-serif; }
+        .lang-btn { transition: all 0.3s ease; background-color: #E0E0E0; color: #555; }
+        .lang-btn.active { background-color: #4CAF50; color: white; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .flag-icon { font-size: 1.1em; line-height: 1; }
+        .article-content h2 { font-size: 1.875rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; color: #1f2937; }
+        .article-content p { margin-bottom: 1.25rem; line-height: 1.8; color: #4b5563; }
+        .article-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #4b5563; }
+        .article-content a { color: #15803d; font-weight: 600; text-decoration: underline; transition: color 0.3s; }
+        .article-content a:hover { color: #166534; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-sm py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800 title" data-translate="nav_title">La Grange des Balas</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="/#about" class="text-gray-600 hover:text-green-800" data-translate="nav_about">Le Gîte</a>
+                <a href="/#gallery" class="text-gray-600 hover:text-green-800" data-translate="nav_gallery">Galerie</a>
+                <a href="/#amenities" class="text-gray-600 hover:text-green-800" data-translate="nav_amenities">Équipements</a>
+                <a href="/tourisme/index.html" class="text-green-800 font-semibold" data-translate="nav_activities">Activités</a>
+                <a href="/#rates" class="text-gray-600 hover:text-green-800" data-translate="nav_rates">Tarifs</a>
+                <a href="/#contact" class="text-gray-600 hover:text-green-800" data-translate="nav_contact">Contact</a>
+            </div>
+            <div class="flex items-center space-x-1 border border-gray-300 rounded-full p-1">
+                <button id="lang-fr" class="lang-btn active px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇫🇷</span> <span class="hidden md:inline">FR</span></button>
+                <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇬🇧</span> <span class="hidden md:inline">EN</span></button>
+                <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇪🇸</span> <span class="hidden md:inline">ES</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full h-[50vh] bg-gray-300 relative flex flex-col items-center justify-center">
+        <img src="../images/exterieur_1.webp" alt="Vestiges de Vienne la Romaine" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 w-full max-w-4xl px-4 flex justify-between mb-8">
+            <a href="/#activities" class="bg-white/20 hover:bg-white/40 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base"><i class="fa-solid fa-home mr-2"></i><span data-translate="btn_home">Retour au site</span></a>
+            <a href="/tourisme/index.html" class="bg-green-700/80 hover:bg-green-700 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base"><i class="fa-solid fa-map-location-dot mr-2"></i><span data-translate="btn_activities">Toutes les activités</span></a>
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4" data-translate="article_title">Vienne la Romaine</h1>
+            <p class="text-gray-200 text-lg md:text-xl font-light" data-translate="article_subtitle">Voyagez au temps de l'Antiquité</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <article class="bg-white p-8 md:p-12 rounded-lg shadow-xl article-content">
+            <p data-translate="article_p1">Posée sur les rives du Rhône, la ville de <strong>Vienne</strong> est classée "Ville d'Art et d'Histoire". Elle fut l'une des cités les plus importantes de la Gaule romaine et conserve aujourd'hui un patrimoine architectural exceptionnel, en plein centre-ville.</p>
+            
+            <h2 data-translate="article_h2_1">Un patrimoine monumental</h2>
+            <p data-translate="article_p2">Se promener dans les rues de Vienne, c'est tourner les pages d'un livre d'histoire à ciel ouvert. L'urbanisme moderne côtoie harmonieusement les colonnes millénaires, offrant aux visiteurs un contraste saisissant et une ambiance unique.</p>
+
+            <h2 data-translate="article_h2_2">Les incontournables</h2>
+            <ul data-translate="article_list">
+                <li><strong>Le Temple d'Auguste et de Livie :</strong> Un joyau d'architecture romaine parfaitement conservé qui trône au milieu d'une place animée.</li>
+                <li><strong>Le Théâtre Antique :</strong> Adossé à la colline de Pipet, il pouvait accueillir 13 000 spectateurs. Il accueille aujourd'hui le célèbre festival Jazz à Vienne.</li>
+                <li><strong>La Pyramide :</strong> Un obélisque monumental qui marquait le centre du cirque romain de la ville.</li>
+                <li><strong>Le Belvédère de Pipet :</strong> Pour profiter d'une vue panoramique imprenable sur la ville, le fleuve et les vestiges.</li>
+            </ul>
+
+            <h2 data-translate="article_h2_3">Informations pratiques</h2>
+            <p data-translate="article_p3">Vienne est très facile d'accès depuis le gîte. Nous vous conseillons de vous garer sur les quais du Rhône pour explorer le centre historique à pied. Retrouvez des plans, des parcours guidés et la billetterie des monuments sur le site de <a href='https://www.vienne-condrieu.com/' target='_blank' rel='noopener'>Vienne Condrieu Tourisme</a>.</p>
+        </article>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const translations = {
+            'fr': {
+                nav_title: "La Grange des Balas", nav_about: "Le Gîte", nav_gallery: "Galerie", nav_amenities: "Équipements", nav_activities: "Activités", nav_rates: "Tarifs", nav_contact: "Contact",
+                btn_home: "Retour au gîte", btn_activities: "Toutes les activités",
+                article_title: "Vienne la Romaine", article_subtitle: "Voyagez au temps de l'Antiquité",
+                article_p1: "Posée sur les rives du Rhône, la ville de <strong>Vienne</strong> est classée \"Ville d'Art et d'Histoire\". Elle fut l'une des cités les plus importantes de la Gaule romaine et conserve aujourd'hui un patrimoine architectural exceptionnel, en plein centre-ville.",
+                article_h2_1: "Un patrimoine monumental",
+                article_p2: "Se promener dans les rues de Vienne, c'est tourner les pages d'un livre d'histoire à ciel ouvert. L'urbanisme moderne côtoie harmonieusement les colonnes millénaires, offrant aux visiteurs un contraste saisissant et une ambiance unique.",
+                article_h2_2: "Les incontournables",
+                article_list: "<li><strong>Le Temple d'Auguste et de Livie :</strong> Un joyau d'architecture romaine parfaitement conservé qui trône au milieu d'une place animée.</li><li><strong>Le Théâtre Antique :</strong> Adossé à la colline de Pipet, il pouvait accueillir 13 000 spectateurs. Il accueille aujourd'hui le célèbre festival Jazz à Vienne.</li><li><strong>La Pyramide :</strong> Un obélisque monumental qui marquait le centre du cirque romain de la ville.</li><li><strong>Le Belvédère de Pipet :</strong> Pour profiter d'une vue panoramique imprenable sur la ville, le fleuve et les vestiges.</li>",
+                article_h2_3: "Informations pratiques",
+                article_p3: "Vienne est très facile d'accès depuis le gîte. Nous vous conseillons de vous garer sur les quais du Rhône pour explorer le centre historique à pied. Retrouvez des plans, des parcours guidés et la billetterie des monuments sur le site de <a href='https://www.vienne-condrieu.com/' target='_blank' rel='noopener'>Vienne Condrieu Tourisme</a>."
+            },
+            'en': {
+                nav_title: "La Grange des Balas", nav_about: "The Guesthouse", nav_gallery: "Gallery", nav_amenities: "Amenities", nav_activities: "Activities", nav_rates: "Rates", nav_contact: "Contact",
+                btn_home: "Back to home", btn_activities: "All activities",
+                article_title: "Roman Vienne", article_subtitle: "Travel back to Antiquity",
+                article_p1: "Located on the banks of the Rhône, the city of <strong>Vienne</strong> is classified as a \"City of Art and History\". It was one of the most important cities of Roman Gaul and today preserves exceptional architectural heritage right in the city center.",
+                article_h2_1: "Monumental heritage",
+                article_p2: "Strolling through the streets of Vienne is like turning the pages of an open-air history book. Modern urbanism harmoniously borders the thousand-year-old columns, offering visitors a striking contrast.",
+                article_h2_2: "Must-sees",
+                article_list: "<li><strong>Temple of Augustus and Livia:</strong> A perfectly preserved jewel of Roman architecture.</li><li><strong>The Ancient Theatre:</strong> Leaning against the Pipet hill, it could accommodate 13,000 spectators and now hosts the famous Jazz à Vienne festival.</li><li><strong>La Pyramide:</strong> A monumental obelisk that marked the center of the city's Roman circus.</li><li><strong>Pipet Belvedere:</strong> For breathtaking panoramic views of the city.</li>",
+                article_h2_3: "Practical Information",
+                article_p3: "Vienne is very easy to access from the guesthouse. We advise you to park on the banks of the Rhône. Find maps, guided tours, and tickets on the <a href='https://www.vienne-condrieu.com/' target='_blank' rel='noopener'>Vienne Condrieu Tourism website</a>."
+            },
+            'es': {
+                nav_title: "La Grange des Balas", nav_about: "La Casa Rural", nav_gallery: "Galería", nav_amenities: "Servicios", nav_activities: "Actividades", nav_rates: "Tarifas", nav_contact: "Contacto",
+                btn_home: "Volver a la casa", btn_activities: "Todas las actividades",
+                article_title: "Viena la Romana", article_subtitle: "Viaja a la Antigüedad",
+                article_p1: "Situada a orillas del Ródano, la ciudad de <strong>Vienne</strong> está clasificada como \"Ciudad de Arte e Historia\". Fue una de las ciudades más importantes de la Galia romana y conserva un patrimonio arquitectónico excepcional.",
+                article_h2_1: "Un patrimonio monumental",
+                article_p2: "Pasear por las calles de Vienne es como hojear un libro de historia al aire libre. El urbanismo moderno convive con columnas milenarias, ofreciendo un contraste y una atmósfera únicos.",
+                article_h2_2: "Lugares imprescindibles",
+                article_list: "<li><strong>Templo de Augusto y Livia:</strong> Una joya de la arquitectura romana perfectamente conservada.</li><li><strong>El Teatro Antiguo:</strong> Apoyado en la colina de Pipet, podía albergar a 13.000 espectadores y hoy acoge el famoso festival Jazz à Vienne.</li><li><strong>La Pirámide:</strong> Un obelisco monumental del circo romano.</li><li><strong>Mirador de Pipet:</strong> Para unas vistas panorámicas impresionantes de la ciudad.</li>",
+                article_h2_3: "Información práctica",
+                article_p3: "Vienne es muy accesible desde la casa. Le aconsejamos aparcar a orillas del Ródano. Encuentre mapas y entradas en la web de <a href='https://www.vienne-condrieu.com/' target='_blank' rel='noopener'>Turismo de Vienne Condrieu</a>."
+            }
+        };
+        const langButtons = { fr: document.getElementById('lang-fr'), en: document.getElementById('lang-en'), es: document.getElementById('lang-es') };
+        const changeLanguage = (lang) => {
+            if (!translations[lang]) lang = 'fr';
+            document.documentElement.lang = lang;
+            Object.values(langButtons).forEach(btn => btn.classList.remove('active'));
+            if(langButtons[lang]) langButtons[lang].classList.add('active');
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+            elementsToTranslate.forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) el.innerHTML = translations[lang][key];
+            });
+            localStorage.setItem('site_lang', lang);
+        };
+        Object.keys(langButtons).forEach(lang => { if(langButtons[lang]) langButtons[lang].addEventListener('click', () => changeLanguage(lang)); });
+        changeLanguage(localStorage.getItem('site_lang') || 'fr');
+    });
+    </script>
+</body>
+</html>
