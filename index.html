@@ -350,10 +350,12 @@
 </head>
 <body class="bg-gray-50">
 
-    <div id="cookie-banner" style="display: none; position: fixed; bottom: 0; width: 100%; background: #eee; padding: 20px; text-align: center; border-top: 1px solid #ccc;">
-        <p>Nous utilisons Google Analytics pour comprendre comment vous utilisez notre site. Acceptez-vous le dépôt de cookies d'analyse ?</p>
-        <button onclick="acceptCookies()">Tout accepter</button>
-        <button onclick="denyCookies()">Tout refuser</button>
+    <div id="cookie-banner" style="display: none; z-index: 9999; position: fixed; bottom: 0; width: 100%; background: #F8F7F4; padding: 20px; text-align: center; border-top: 1px solid #ccc; box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);">
+        <p class="mb-4 text-gray-700">Nous utilisons Google Analytics pour comprendre comment vous utilisez notre site. Acceptez-vous le dépôt de cookies d'analyse ?</p>
+        <div>
+            <button onclick="acceptCookies()" class="bg-green-700 text-white font-bold py-3 px-8 rounded-lg shadow hover:bg-green-800 transition duration-300 mx-2">Tout accepter</button>
+            <button onclick="denyCookies()" class="text-xs text-gray-500 underline hover:text-gray-800 transition duration-300 mx-2 mt-2">Tout refuser</button>
+        </div>
     </div>
 
     <!-- =========== Header =========== -->
