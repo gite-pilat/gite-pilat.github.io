@@ -1,38 +1,45 @@
+# robots.txt - La Grange des Balas
+# Configuration Optimisée SEO & AIO
+
+# ========================================
+# Autorisation globale (moteurs classiques)
+# ========================================
 User-agent: *
 Allow: /
 
-# Disallow common administrative and non-public areas to optimize crawl budget
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /cgi-bin/
-Disallow: /wp-login.php
-Disallow: /xmlrpc.php
-Disallow: /trackback/
-Disallow: /*.zip$
-Disallow: /*.rar$
-Disallow: /*.tar.gz$
-Disallow: /*.bak$
-Disallow: /*.sql$
-Disallow: /*.log$
-Disallow: /search/
-Disallow: /tag/
-Disallow: /category/*/page/
-Disallow: /feed/
-Disallow: /*/feed/
-Disallow: /*/comment-page-*
-Disallow: /*?replytocom
-Disallow: /?s=*
-Disallow: /?attachment_id=
-Disallow: /attachment/
+# ========================================
+# Directives IA / LLM Crawlers
+# ========================================
 
-# Allow essential files (CSS, JavaScript, images) that might be in disallowed directories for proper rendering
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.png$
-Allow: /*.gif$
-Allow: /*.svg$
+# OpenAI - GPTBot (indexation IA)
+User-agent: GPTBot
+Allow: /
 
-# Specify the sitemap location to help search engines discover all your important pages
-Sitemap: https://gite-pilat.fr/sitemap.xml
+# OpenAI - Navigation utilisateur ChatGPT
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic - Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google IA (Search Generative Experience / Gemini)
+User-agent: Google-Extended
+Allow: /
+
+
+# ========================================
+# Sitemap 
+# ========================================
+Sitemap: https://www.gite-pilat.fr/sitemap.xml
+
+
+# ========================================
+# Fichiers optimisés pour le SEO et AIO
+# ========================================
+llms.txt : https://www.gite-pilat.fr/llms.txt
+index.html.md : https://www.gite-pilat.fr/index.html.md
