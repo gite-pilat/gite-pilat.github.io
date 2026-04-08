@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Parc Naturel Régional du Pilat | La Grange des Balas</title>
+    <meta name="description" content="Profitez du Parc Naturel Régional du Pilat pour vos activités de plein air : VTT, accrobranche, via ferrata et découverte du terroir.">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @font-face { font-family: 'BrushScript'; src: url('../fonts/BrushScript.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+        body { font-family: 'Poppins', sans-serif; background-color: #F8F7F4; color: #333; }
+        .title { font-family: 'BrushScript', sans-serif; }
+        .lang-btn { transition: all 0.3s ease; background-color: #E0E0E0; color: #555; }
+        .lang-btn.active { background-color: #4CAF50; color: white; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .flag-icon { font-size: 1.1em; line-height: 1; }
+        .article-content h2 { font-size: 1.875rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; color: #1f2937; }
+        .article-content p { margin-bottom: 1.25rem; line-height: 1.8; color: #4b5563; }
+        .article-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #4b5563; }
+        .article-content a { color: #15803d; font-weight: 600; text-decoration: underline; transition: color 0.3s; }
+        .article-content a:hover { color: #166534; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-sm py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800 title" data-translate="nav_title">La Grange des Balas</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="/#about" class="text-gray-600 hover:text-green-800" data-translate="nav_about">Le Gîte</a>
+                <a href="/#gallery" class="text-gray-600 hover:text-green-800" data-translate="nav_gallery">Galerie</a>
+                <a href="/#amenities" class="text-gray-600 hover:text-green-800" data-translate="nav_amenities">Équipements</a>
+                <a href="/tourisme/index.html" class="text-green-800 font-semibold" data-translate="nav_activities">Activités</a>
+                <a href="/#rates" class="text-gray-600 hover:text-green-800" data-translate="nav_rates">Tarifs</a>
+                <a href="/#contact" class="text-gray-600 hover:text-green-800" data-translate="nav_contact">Contact</a>
+            </div>
+            <div class="flex items-center space-x-1 border border-gray-300 rounded-full p-1">
+                <button id="lang-fr" class="lang-btn active px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇫🇷</span> <span class="hidden md:inline">FR</span></button>
+                <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇬🇧</span> <span class="hidden md:inline">EN</span></button>
+                <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇪🇸</span> <span class="hidden md:inline">ES</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full h-[50vh] bg-gray-300 relative flex flex-col items-center justify-center">
+        <img src="../images/exterieur_1.webp" alt="Forêt du Parc du Pilat" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 w-full max-w-4xl px-4 flex justify-between mb-8">
+            <a href="/#activities" class="bg-white/20 hover:bg-white/40 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base"><i class="fa-solid fa-home mr-2"></i><span data-translate="btn_home">Retour au site</span></a>
+            <a href="/tourisme/index.html" class="bg-green-700/80 hover:bg-green-700 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base"><i class="fa-solid fa-map-location-dot mr-2"></i><span data-translate="btn_activities">Toutes les activités</span></a>
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4" data-translate="article_title">Parc du Pilat</h1>
+            <p class="text-gray-200 text-lg md:text-xl font-light" data-translate="article_subtitle">Le poumon vert de la région</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <article class="bg-white p-8 md:p-12 rounded-lg shadow-xl article-content">
+            <p data-translate="article_p1">Notre gîte est niché au cœur même du <strong>Parc Naturel Régional du Pilat</strong>. Ce vaste espace protégé de plus de 700 km² est un formidable terrain de jeu pour les sportifs, les amoureux de la nature et les gourmands à la recherche de produits locaux authentiques.</p>
+            
+            <h2 data-translate="article_h2_1">Faites le plein de sensations</h2>
+            <p data-translate="article_p2">Outre la randonnée pédestre, le Pilat est aménagé pour accueillir de nombreuses autres pratiques sportives en pleine nature. Les infrastructures y sont parfaitement entretenues et respectueuses de l'environnement.</p>
+
+            <h2 data-translate="article_h2_2">Activités de plein air</h2>
+            <ul data-translate="article_list">
+                <li><strong>Vélo et VTT :</strong> De nombreuses pistes sillonnent les sous-bois. La base VTT de la région propose des circuits balisés pour tous les niveaux.</li>
+                <li><strong>Accrobranche et Via Ferrata :</strong> Faites le plein d'adrénaline au Gouffre d'Enfer ou dans les parcs aventure de la forêt de Taillard.</li>
+                <li><strong>Découverte du Terroir :</strong> Ne manquez pas de visiter la Maison du Parc à Pélussin, ni de déguster les vins de la région (Côtes-du-Rhône, Condrieu) ou les célèbres rigottes de Condrieu (fromage de chèvre).</li>
+            </ul>
+
+            <h2 data-translate="article_h2_3">S'informer et s'organiser</h2>
+            <p data-translate="article_p3">Pour découvrir l'agenda complet des activités, des marchés locaux et des visites de fermes, rendez-vous sur le <a href='https://www.parc-naturel-pilat.fr/' target='_blank' rel='noopener'>site du Parc Naturel Régional du Pilat</a> ou dans l'un des bureaux d'accueil touristique de la région.</p>
+        </article>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const translations = {
+            'fr': {
+                nav_title: "La Grange des Balas", nav_about: "Le Gîte", nav_gallery: "Galerie", nav_amenities: "Équipements", nav_activities: "Activités", nav_rates: "Tarifs", nav_contact: "Contact",
+                btn_home: "Retour au gîte", btn_activities: "Toutes les activités",
+                article_title: "Parc du Pilat", article_subtitle: "Le poumon vert de la région",
+                article_p1: "Notre gîte est niché au cœur même du <strong>Parc Naturel Régional du Pilat</strong>. Ce vaste espace protégé est un formidable terrain de jeu pour les sportifs et les amoureux de la nature.",
+                article_h2_1: "Faites le plein de sensations",
+                article_p2: "Outre la randonnée, le Pilat est aménagé pour de nombreuses pratiques sportives en pleine nature, respectueuses de l'environnement.",
+                article_h2_2: "Activités de plein air",
+                article_list: "<li><strong>Vélo et VTT :</strong> La base VTT propose des circuits balisés pour tous les niveaux.</li><li><strong>Accrobranche et Via Ferrata :</strong> Au Gouffre d'Enfer ou dans les parcs aventure de la région.</li><li><strong>Terroir :</strong> Dégustez les vins (Condrieu) et fromages locaux (Rigotte de Condrieu).</li>",
+                article_h2_3: "S'informer et s'organiser",
+                article_p3: "Pour découvrir l'agenda des activités et marchés, rendez-vous sur le <a href='https://www.parc-naturel-pilat.fr/' target='_blank' rel='noopener'>site du Parc Naturel Régional du Pilat</a>."
+            },
+            'en': {
+                nav_title: "La Grange des Balas", nav_about: "The Guesthouse", nav_gallery: "Gallery", nav_amenities: "Amenities", nav_activities: "Activities", nav_rates: "Rates", nav_contact: "Contact",
+                btn_home: "Back to home", btn_activities: "All activities",
+                article_title: "Pilat Nature Park", article_subtitle: "The green lung of the region",
+                article_p1: "Our guesthouse is nestled in the heart of the <strong>Pilat Regional Nature Park</strong>. This vast protected area is a wonderful playground for sports enthusiasts and nature lovers.",
+                article_h2_1: "Fill up on thrills",
+                article_p2: "Besides hiking, the Pilat is equipped for many outdoor sports practices that respect the environment.",
+                article_h2_2: "Outdoor activities",
+                article_list: "<li><strong>Mountain biking:</strong> Marked trails for all levels.</li><li><strong>Tree climbing and Via Ferrata:</strong> At the Gouffre d'Enfer or in adventure parks.</li><li><strong>Local products:</strong> Taste local wines and famous goat cheeses (Rigotte).</li>",
+                article_h2_3: "Information",
+                article_p3: "Discover the agenda of activities on the <a href='https://www.parc-naturel-pilat.fr/' target='_blank' rel='noopener'>Pilat Park website</a>."
+            },
+            'es': {
+                nav_title: "La Grange des Balas", nav_about: "La Casa Rural", nav_gallery: "Galería", nav_amenities: "Servicios", nav_activities: "Actividades", nav_rates: "Tarifas", nav_contact: "Contacto",
+                btn_home: "Volver a la casa", btn_activities: "Todas las actividades",
+                article_title: "Parque del Pilat", article_subtitle: "El pulmón verde de la región",
+                article_p1: "Nuestra casa está situada en el corazón del <strong>Parque Natural Regional del Pilat</strong>. Este vasto espacio protegido es un maravilloso campo de juego para los amantes de la naturaleza.",
+                article_h2_1: "Lleno de emociones",
+                article_p2: "Además del senderismo, el Pilat está acondicionado para muchas prácticas deportivas al aire libre.",
+                article_h2_2: "Actividades al aire libre",
+                article_list: "<li><strong>Ciclismo de montaña:</strong> Rutas señalizadas para todos los niveles.</li><li><strong>Vía Ferrata:</strong> En el Gouffre d'Enfer o en parques de aventuras.</li><li><strong>Productos locales:</strong> Deguste vinos y quesos locales (Rigotte).</li>",
+                article_h2_3: "Información",
+                article_p3: "Descubra la agenda de actividades en el <a href='https://www.parc-naturel-pilat.fr/' target='_blank' rel='noopener'>sitio web del Parque Pilat</a>."
+            }
+        };
+        const langButtons = { fr: document.getElementById('lang-fr'), en: document.getElementById('lang-en'), es: document.getElementById('lang-es') };
+        const changeLanguage = (lang) => {
+            if (!translations[lang]) lang = 'fr';
+            document.documentElement.lang = lang;
+            Object.values(langButtons).forEach(btn => btn.classList.remove('active'));
+            if(langButtons[lang]) langButtons[lang].classList.add('active');
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+            elementsToTranslate.forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) el.innerHTML = translations[lang][key];
+            });
+            localStorage.setItem('site_lang', lang);
+        };
+        Object.keys(langButtons).forEach(lang => { if(langButtons[lang]) langButtons[lang].addEventListener('click', () => changeLanguage(lang)); });
+        changeLanguage(localStorage.getItem('site_lang') || 'fr');
+    });
+    </script>
+</body>
+</html>

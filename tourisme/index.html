@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activités et Tourisme dans le Parc du Pilat | La Grange des Balas</title>
+    <meta name="description" content="Découvrez toutes les activités, randonnées et visites touristiques autour de notre gîte dans le Parc Naturel Régional du Pilat.">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.webp">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: 'BrushScript'; 
+            src: url('../fonts/BrushScript.ttf') format('truetype'); 
+            font-weight: normal; font-style: normal; 
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: #F8F7F4; color: #333; }
+        .title { font-family: 'BrushScript', sans-serif; }
+        .lang-btn { transition: all 0.3s ease; background-color: #E0E0E0; color: #555; }
+        .lang-btn.active { background-color: #4CAF50; color: white; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .flag-icon { font-size: 1.1em; line-height: 1; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-sm py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800 title" data-translate="nav_title">La Grange des Balas</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="/#about" class="text-gray-600 hover:text-green-800" data-translate="nav_about">Le Gîte</a>
+                <a href="/#gallery" class="text-gray-600 hover:text-green-800" data-translate="nav_gallery">Galerie</a>
+                <a href="/#amenities" class="text-gray-600 hover:text-green-800" data-translate="nav_amenities">Équipements</a>
+                <a href="/tourisme/index.html" class="text-green-800 font-bold" data-translate="nav_activities">Activités</a>
+                <a href="/#rates" class="text-gray-600 hover:text-green-800" data-translate="nav_rates">Tarifs</a>
+                <a href="/#contact" class="text-gray-600 hover:text-green-800" data-translate="nav_contact">Contact</a>
+            </div>
+            <div class="flex items-center space-x-1 border border-gray-300 rounded-full p-1">
+                <button id="lang-fr" class="lang-btn active px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1">
+                    <span class="flag-icon md:hidden">🇫🇷</span> <span class="hidden md:inline">FR</span>
+                </button>
+                <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1">
+                    <span class="flag-icon md:hidden">🇬🇧</span> <span class="hidden md:inline">EN</span>
+                </button>
+                <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1">
+                    <span class="flag-icon md:hidden">🇪🇸</span> <span class="hidden md:inline">ES</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        
+        <div class="text-center mb-16">
+            <a href="/" class="inline-block bg-white text-gray-700 border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-100 transition-colors mb-6 shadow-sm text-sm">
+                <i class="fa-solid fa-arrow-left mr-2"></i><span data-translate="btn_home">Retour à l'accueil du gîte</span>
+            </a>
+            <h1 class="text-4xl font-bold text-gray-800 mb-4" data-translate="activities_title">Activités et découvertes dans le Pilat</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto" data-translate="activities_intro">Le gîte met à votre disposition tous les documents nécessaires pour explorer la région. Voici toutes nos recommandations pour un séjour inoubliable.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            <a href="/tourisme/randonnees-locales.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <h3 class="font-semibold text-xl mb-2 group-hover:text-green-700 transition-colors" data-translate="activities_item1_title">Randonnées locales</h3>
+                <p class="text-gray-600 text-sm mb-4" data-translate="activities_item1_desc">Explorez les nombreux chemins de la commune et découvrez ses curiosités naturelles. Le Parc Naturel Régional du Pilat vous offre une multitude de sentiers balisés inédits.</p>
+                <span class="text-green-700 font-semibold text-sm group-hover:underline">Découvrir les sentiers <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+
+            <a href="/tourisme/sainte-croix-en-jarez.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <h3 class="font-semibold text-xl mb-2 group-hover:text-green-700 transition-colors" data-translate="activities_item2_title">Sainte-Croix-en-Jarez</h3>
+                <p class="text-gray-600 text-sm mb-4" data-translate="activities_item2_desc">Visitez ce superbe village classé, une ancienne chartreuse nichée au cœur du Pilat. Partez à la découverte de son histoire fascinante à travers des visites inoubliables.</p>
+                <span class="text-green-700 font-semibold text-sm group-hover:underline">Découvrir le village <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+
+            <a href="/tourisme/vienne-la-romaine.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <h3 class="font-semibold text-xl mb-2 group-hover:text-green-700 transition-colors" data-translate="activities_item3_title">Vienne la Romaine</h3>
+                <p class="text-gray-600 text-sm mb-4" data-translate="activities_item3_desc">Découvrez la riche histoire de Vienne avec son célèbre théâtre antique et ses nombreux sites gallo-romains. Une plongée passionnante dans le passé de notre belle région.</p>
+                <span class="text-green-700 font-semibold text-sm group-hover:underline">Découvrir Vienne <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+
+            <a href="/tourisme/musees-region.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <h3 class="font-semibold text-xl mb-2 group-hover:text-green-700 transition-colors" data-translate="activities_item4_title">Musées de la région</h3>
+                <p class="text-gray-600 text-sm mb-4" data-translate="activities_item4_desc">Du superbe musée archéologique de Saint-Romain-en-Gal jusqu'au célèbre musée de la mine de Saint-Étienne, plongez au cœur de l'histoire et de la riche culture locales.</p>
+                <span class="text-green-700 font-semibold text-sm group-hover:underline">Découvrir les musées <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+
+            <a href="/tourisme/parc-du-pilat.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <h3 class="font-semibold text-xl mb-2 group-hover:text-green-700 transition-colors" data-translate="activities_item5_title">Parc du Pilat</h3>
+                <p class="text-gray-600 text-sm mb-4" data-translate="activities_item5_desc">Profitez des magnifiques paysages et des activités offertes par le parc. Faites une halte par Pélussin, point de départ idéal pour de nombreuses excursions en pleine nature.</p>
+                <span class="text-green-700 font-semibold text-sm group-hover:underline">Découvrir le parc <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+
+            <a href="/tourisme/parc-animalier.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                <h3 class="font-semibold text-xl mb-2 group-hover:text-green-700 transition-colors" data-translate="activities_item6_title">Parc Animalier</h3>
+                <p class="text-gray-600 text-sm mb-4" data-translate="activities_item6_desc">Profitez d'une sortie idéale en famille pour aller découvrir le magnifique parc animalier de Saint-Martin-la-Plaine, qui abrite de très nombreuses espèces du monde entier.</p>
+                <span class="text-green-700 font-semibold text-sm group-hover:underline">Découvrir le parc <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i></span>
+            </a>
+
+        </div>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const translations = {
+            'fr': {
+                nav_title: "La Grange des Balas", nav_about: "Le Gîte", nav_gallery: "Galerie", nav_amenities: "Équipements", nav_activities: "Activités", nav_rates: "Tarifs", nav_contact: "Contact",
+                btn_home: "Retour à l'accueil du gîte",
+                activities_title: "Activités et découvertes dans le Pilat",
+                activities_intro: "Le gîte met à votre disposition tous les documents nécessaires pour explorer la région. Voici toutes nos recommandations pour un séjour inoubliable.",
+                activities_item1_title: "Randonnées locales", activities_item1_desc: "Explorez les nombreux chemins de la commune et découvrez ses curiosités naturelles. Le Parc Naturel Régional du Pilat vous offre une multitude de sentiers balisés inédits.",
+                activities_item2_title: "Sainte-Croix-en-Jarez", activities_item2_desc: "Visitez ce superbe village classé, une ancienne chartreuse nichée au cœur du Pilat. Partez à la découverte de son histoire fascinante à travers des visites inoubliables.",
+                activities_item3_title: "Vienne la Romaine", activities_item3_desc: "Découvrez la riche histoire de Vienne avec son célèbre théâtre antique et ses nombreux sites gallo-romains. Une plongée passionnante dans le passé de notre belle région.",
+                activities_item4_title: "Musées de la région", activities_item4_desc: "Du superbe musée archéologique de Saint-Romain-en-Gal jusqu'au célèbre musée de la mine de Saint-Étienne, plongez au cœur de l'histoire et de la riche culture locales.",
+                activities_item5_title: "Parc du Pilat", activities_item5_desc: "Profitez des magnifiques paysages et des activités offertes par le parc. Faites une halte par Pélussin, point de départ idéal pour de nombreuses excursions en pleine nature.",
+                activities_item6_title: "Parc Animalier", activities_item6_desc: "Profitez d'une sortie idéale en famille pour aller découvrir le magnifique parc animalier de Saint-Martin-la-Plaine, qui abrite de très nombreuses espèces du monde entier."
+            },
+            'en': {
+                nav_title: "La Grange des Balas", nav_about: "The Guesthouse", nav_gallery: "Gallery", nav_amenities: "Amenities", nav_activities: "Activities", nav_rates: "Rates", nav_contact: "Contact",
+                btn_home: "Back to guesthouse home",
+                activities_title: "Activities and Discoveries in the Pilat",
+                activities_intro: "The guesthouse provides all necessary documents to explore the region. Here are all our recommendations for an unforgettable stay.",
+                activities_item1_title: "Local Hikes", activities_item1_desc: "Explore the many paths of the village and discover its natural curiosities. The Pilat Regional Natural Park offers you a multitude of unique and marked hiking trails.",
+                activities_item2_title: "Sainte-Croix-en-Jarez", activities_item2_desc: "Visit this superb listed village, a former Carthusian monastery nestled in the Pilat. Set off to discover its fascinating history through unforgettable guided tours.",
+                activities_item3_title: "Vienne la Romaine", activities_item3_desc: "Discover the rich history of Vienne with its famous ancient theater and numerous Gallo-Roman sites. Enjoy a fascinating dive into the ancient past of our beautiful region.",
+                activities_item4_title: "Museums in the region", activities_item4_desc: "From the superb archaeological museum of Saint-Romain-en-Gal to the famous mining museum of Saint-Étienne, dive deep into the heart of our rich local history and culture.",
+                activities_item5_title: "Pilat Park", activities_item5_desc: "Enjoy the beautiful landscapes and outdoor activities offered by the park. Stop by Pélussin, the perfect starting point for many memorable excursions in the wilderness.",
+                activities_item6_title: "Animal Park", activities_item6_desc: "Enjoy an ideal family outing to discover the magnificent wildlife park of Saint-Martin-la-Plaine, which is home to a wide variety of amazing species from around the world."
+            },
+            'es': {
+                nav_title: "La Grange des Balas", nav_about: "La Casa Rural", nav_gallery: "Galería", nav_amenities: "Servicios", nav_activities: "Actividades", nav_rates: "Tarifas", nav_contact: "Contacto",
+                btn_home: "Volver al inicio",
+                activities_title: "Actividades y Descubrimientos en el Pilat",
+                activities_intro: "La casa rural pone a su disposición todos los documentos necesarios para explorar la región. Aquí tiene todas nuestras recomendaciones para una estancia inolvidable.",
+                activities_item1_title: "Senderismo local", activities_item1_desc: "Explora los numerosos senderos del pueblo y descubre sus curiosidades naturales. El Parque Natural Regional de Pilat te ofrece una multitud de rutas de senderismo únicas.",
+                activities_item2_title: "Sainte-Croix-en-Jarez", activities_item2_desc: "Visita este magnífico pueblo catalogado, una antigua cartuja en el corazón de Pilat. Descubre su fascinante historia a través de unas visitas guiadas verdaderamente únicas.",
+                activities_item3_title: "Vienne la Romaine", activities_item3_desc: "Descubre la rica historia de Vienne con su famoso teatro antiguo y numerosos sitios galorromanos. Disfruta de una inmersión fascinante en el pasado de nuestra hermosa región.",
+                activities_item4_title: "Museos de la región", activities_item4_desc: "Desde el magnífico museo arqueológico de Saint-Romain-en-Gal hasta el famoso museo de la mina de Saint-Étienne, sumérgete en el corazón de nuestra rica historia y cultura.",
+                activities_item5_title: "Parque Pilat", activities_item5_desc: "Disfruta de los hermosos paisajes y actividades que ofrece el parque. Haz una parada en Pélussin, el punto de partida ideal para muchas excursiones en plena naturaleza.",
+                activities_item6_title: "Parque de animales", activities_item6_desc: "Disfruta de una salida familiar ideal para descubrir el magnífico parque de animales de Saint-Martin-la-Plaine, que alberga numerosas especies asombrosas de todo el mundo."
+            }
+        };
+
+        const langButtons = { fr: document.getElementById('lang-fr'), en: document.getElementById('lang-en'), es: document.getElementById('lang-es') };
+
+        const changeLanguage = (lang) => {
+            if (!translations[lang]) lang = 'fr';
+            document.documentElement.lang = lang;
+            Object.values(langButtons).forEach(btn => btn.classList.remove('active'));
+            if(langButtons[lang]) langButtons[lang].classList.add('active');
+
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+            elementsToTranslate.forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    el.innerHTML = translations[lang][key];
+                }
+            });
+            localStorage.setItem('site_lang', lang);
+        };
+
+        Object.keys(langButtons).forEach(lang => {
+            if(langButtons[lang]) { langButtons[lang].addEventListener('click', () => changeLanguage(lang)); }
+        });
+
+        const savedLang = localStorage.getItem('site_lang') || 'fr';
+        changeLanguage(savedLang);
+    });
+    </script>
+</body>
+</html>

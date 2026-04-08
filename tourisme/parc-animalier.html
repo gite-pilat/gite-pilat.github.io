@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Zoologique de Saint-Martin-la-Plaine | La Grange des Balas</title>
+    <meta name="description" content="Découvrez l'Espace Zoologique de Saint-Martin-la-Plaine, célèbre pour ses gorilles et son engagement pour la protection des animaux, idéal pour une sortie en famille.">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @font-face { font-family: 'BrushScript'; src: url('../fonts/BrushScript.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+        body { font-family: 'Poppins', sans-serif; background-color: #F8F7F4; color: #333; }
+        .title { font-family: 'BrushScript', sans-serif; }
+        .lang-btn { transition: all 0.3s ease; background-color: #E0E0E0; color: #555; }
+        .lang-btn.active { background-color: #4CAF50; color: white; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .flag-icon { font-size: 1.1em; line-height: 1; }
+        .article-content h2 { font-size: 1.875rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; color: #1f2937; }
+        .article-content p { margin-bottom: 1.25rem; line-height: 1.8; color: #4b5563; }
+        .article-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; color: #4b5563; }
+        .article-content a { color: #15803d; font-weight: 600; text-decoration: underline; transition: color 0.3s; }
+        .article-content a:hover { color: #166534; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-sm py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-gray-800 title" data-translate="nav_title">La Grange des Balas</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="/#about" class="text-gray-600 hover:text-green-800" data-translate="nav_about">Le Gîte</a>
+                <a href="/#gallery" class="text-gray-600 hover:text-green-800" data-translate="nav_gallery">Galerie</a>
+                <a href="/#amenities" class="text-gray-600 hover:text-green-800" data-translate="nav_amenities">Équipements</a>
+                <a href="/tourisme/index.html" class="text-green-800 font-semibold" data-translate="nav_activities">Activités</a>
+                <a href="/#rates" class="text-gray-600 hover:text-green-800" data-translate="nav_rates">Tarifs</a>
+                <a href="/#contact" class="text-gray-600 hover:text-green-800" data-translate="nav_contact">Contact</a>
+            </div>
+            <div class="flex items-center space-x-1 border border-gray-300 rounded-full p-1">
+                <button id="lang-fr" class="lang-btn active px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇫🇷</span> <span class="hidden md:inline">FR</span></button>
+                <button id="lang-en" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇬🇧</span> <span class="hidden md:inline">EN</span></button>
+                <button id="lang-es" class="lang-btn px-3 py-1 text-sm rounded-full flex items-center justify-center space-x-1"><span class="flag-icon md:hidden">🇪🇸</span> <span class="hidden md:inline">ES</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full h-[50vh] bg-gray-300 relative flex flex-col items-center justify-center">
+        <img src="../images/exterieur_1.webp" alt="Parc Animalier de Saint-Martin-la-Plaine" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 w-full max-w-4xl px-4 flex justify-between mb-8">
+            <a href="/#activities" class="bg-white/20 hover:bg-white/40 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base"><i class="fa-solid fa-home mr-2"></i><span data-translate="btn_home">Retour au site</span></a>
+            <a href="/tourisme/index.html" class="bg-green-700/80 hover:bg-green-700 backdrop-blur text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm md:text-base"><i class="fa-solid fa-map-location-dot mr-2"></i><span data-translate="btn_activities">Toutes les activités</span></a>
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg mb-4" data-translate="article_title">Parc Animalier</h1>
+            <p class="text-gray-200 text-lg md:text-xl font-light" data-translate="article_subtitle">Espace Zoologique de Saint-Martin-la-Plaine</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16 max-w-4xl">
+        <article class="bg-white p-8 md:p-12 rounded-lg shadow-xl article-content">
+            <p data-translate="article_p1">À moins de 30 minutes du gîte, l'Espace Zoologique de Saint-Martin-la-Plaine est la destination idéale pour une journée mémorable en famille. Plus qu'un simple zoo, ce parc boisé et vallonné est mondialement reconnu pour son travail de protection des primates.</p>
+            
+            <h2 data-translate="article_h2_1">Un engagement pour la biodiversité</h2>
+            <p data-translate="article_p2">Le parc travaille en étroite collaboration avec l'association "Tonga Terre d'Accueil" qui recueille les animaux sauvages saisis par les autorités (cirques, trafics). En visitant ce parc, vous soutenez directement ces actions de sauvetage et de préservation des espèces menacées.</p>
+
+            <h2 data-translate="article_h2_2">Les rencontres incontournables</h2>
+            <ul data-translate="article_list">
+                <li><strong>Les Gorilles des plaines :</strong> Le parc possède plusieurs magnifiques serres abritant des familles de gorilles. Leurs naissances régulières témoignent du bien-être des animaux.</li>
+                <li><strong>Les loups et félins :</strong> Observez la meute de loups arctiques, les panthères des neiges, ou encore le majestueux tigre de Sibérie.</li>
+                <li><strong>Le vivarium :</strong> Une serre tropicale immersive pour observer reptiles et amphibiens.</li>
+            </ul>
+
+            <h2 data-translate="article_h2_3">Organisez votre journée</h2>
+            <p data-translate="article_p3">La visite complète prend environ une demi-journée. Le parc dispose d'aires de pique-nique très agréables à l'ombre des arbres. Pensez à acheter vos billets à l'avance pour éviter l'attente estivale, directement sur le <a href='https://www.espace-zoologique.com/' target='_blank' rel='noopener'>site officiel de l'Espace Zoologique</a>.</p>
+        </article>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const translations = {
+            'fr': {
+                nav_title: "La Grange des Balas", nav_about: "Le Gîte", nav_gallery: "Galerie", nav_amenities: "Équipements", nav_activities: "Activités", nav_rates: "Tarifs", nav_contact: "Contact",
+                btn_home: "Retour au gîte", btn_activities: "Toutes les activités",
+                article_title: "Parc Animalier", article_subtitle: "Espace Zoologique de Saint-Martin-la-Plaine",
+                article_p1: "À moins de 30 minutes du gîte, l'Espace Zoologique de Saint-Martin-la-Plaine est la destination idéale pour une journée mémorable en famille. Ce parc est mondialement reconnu pour son travail de protection des primates.",
+                article_h2_1: "Un engagement pour la biodiversité",
+                article_p2: "Le parc collabore avec l'association 'Tonga Terre d'Accueil' qui recueille les animaux sauvages saisis. En visitant, vous soutenez ces actions de sauvetage.",
+                article_h2_2: "Les rencontres incontournables",
+                article_list: "<li><strong>Les Gorilles :</strong> Le parc possède des serres magnifiques abritant des gorilles.</li><li><strong>Loups et félins :</strong> Observez les loups arctiques et panthères des neiges.</li><li><strong>Le vivarium :</strong> Une serre immersive pour observer les reptiles.</li>",
+                article_h2_3: "Organisez votre journée",
+                article_p3: "La visite prend environ une demi-journée. Pensez à acheter vos billets sur le <a href='https://www.espace-zoologique.com/' target='_blank' rel='noopener'>site de l'Espace Zoologique</a>."
+            },
+            'en': {
+                nav_title: "La Grange des Balas", nav_about: "The Guesthouse", nav_gallery: "Gallery", nav_amenities: "Amenities", nav_activities: "Activities", nav_rates: "Rates", nav_contact: "Contact",
+                btn_home: "Back to home", btn_activities: "All activities",
+                article_title: "Animal Park", article_subtitle: "Zoological Space of Saint-Martin-la-Plaine",
+                article_p1: "Less than 30 minutes from the guesthouse, this zoological park is the ideal destination for a family day out. It is globally recognized for its primate protection work.",
+                article_h2_1: "Commitment to biodiversity",
+                article_p2: "The park works with 'Tonga Terre d'Accueil' to rescue wild animals. By visiting, you support these rescue efforts.",
+                article_h2_2: "Must-see animals",
+                article_list: "<li><strong>Gorillas:</strong> The park has magnificent greenhouses housing gorillas.</li><li><strong>Wolves and felines:</strong> Observe arctic wolves and snow leopards.</li><li><strong>Vivarium:</strong> An immersive greenhouse for reptiles.</li>",
+                article_h2_3: "Plan your day",
+                article_p3: "The visit takes about half a day. Buy your tickets on the <a href='https://www.espace-zoologique.com/' target='_blank' rel='noopener'>Zoological Space website</a>."
+            },
+            'es': {
+                nav_title: "La Grange des Balas", nav_about: "La Casa Rural", nav_gallery: "Galería", nav_amenities: "Servicios", nav_activities: "Actividades", nav_rates: "Tarifas", nav_contact: "Contacto",
+                btn_home: "Volver a la casa", btn_activities: "Todas las actividades",
+                article_title: "Parque de Animales", article_subtitle: "Zoológico de Saint-Martin-la-Plaine",
+                article_p1: "A menos de 30 minutos, este parque zoológico es el destino ideal para un día en familia. Es mundialmente reconocido por su labor de protección de primates.",
+                article_h2_1: "Compromiso con la biodiversidad",
+                article_p2: "El parque trabaja con 'Tonga Terre d'Accueil' para rescatar animales salvajes. Al visitarlo, usted apoya estos esfuerzos de rescate.",
+                article_h2_2: "Animales imprescindibles",
+                article_list: "<li><strong>Gorilas:</strong> El parque cuenta con magníficos invernaderos que albergan gorilas.</li><li><strong>Lobos y felinos:</strong> Observe lobos árticos y leopardos de las nieves.</li><li><strong>Vivario:</strong> Un invernadero inmersivo para reptiles.</li>",
+                article_h2_3: "Planifique su día",
+                article_p3: "La visita dura aproximadamente medio día. Compre sus entradas en el <a href='https://www.espace-zoologique.com/' target='_blank' rel='noopener'>sitio web del Zoológico</a>."
+            }
+        };
+        const langButtons = { fr: document.getElementById('lang-fr'), en: document.getElementById('lang-en'), es: document.getElementById('lang-es') };
+        const changeLanguage = (lang) => {
+            if (!translations[lang]) lang = 'fr';
+            document.documentElement.lang = lang;
+            Object.values(langButtons).forEach(btn => btn.classList.remove('active'));
+            if(langButtons[lang]) langButtons[lang].classList.add('active');
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+            elementsToTranslate.forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) el.innerHTML = translations[lang][key];
+            });
+            localStorage.setItem('site_lang', lang);
+        };
+        Object.keys(langButtons).forEach(lang => { if(langButtons[lang]) langButtons[lang].addEventListener('click', () => changeLanguage(lang)); });
+        changeLanguage(localStorage.getItem('site_lang') || 'fr');
+    });
+    </script>
+</body>
+</html>

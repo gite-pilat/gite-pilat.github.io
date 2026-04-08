@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.gite-pilat.fr/</loc>
-    <lastmod>2026-04-08T10:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.gite-pilat.fr/llms.txt</loc>
-    <lastmod>2026-04-08T10:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+    
+    <url>
+        <loc>https://www.gite-pilat.fr/</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gite-pilat.fr/tourisme/index.html</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gite-pilat.fr/tourisme/randonnees-locales.html</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.gite-pilat.fr/tourisme/sainte-croix-en-jarez.html</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.gite-pilat.fr/tourisme/vienne-la-romaine.html</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.gite-pilat.fr/tourisme/musees-region.html</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.gite-pilat.fr/tourisme/parc-du-pilat.html</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.gite-pilat.fr/tourisme/parc-animalier.html</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.gite-pilat.fr/llms.txt</loc>
+        <lastmod>2026-04-08T10:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
 </urlset>
