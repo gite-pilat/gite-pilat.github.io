@@ -113,16 +113,48 @@
     { "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }
   ],
 
-  "bed": [
+  "containsPlace": [
     {
-      "@type": "BedDetails",
-      "typeOfBed": "Double",
-      "numberOfBeds": 3
+      "@type": "Room",
+      "name": "Chambre double",
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "value": 2
+      },
+      "bed": {
+        "@type": "BedDetails",
+        "typeOfBed": "Double",
+        "numberOfBeds": 1
+      }
     },
     {
-      "@type": "BedDetails",
-      "typeOfBed": "Single",
-      "numberOfBeds": 2
+      "@type": "Room",
+      "name": "Chambre familiale",
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "value": 4
+      },
+      "bed": [
+        {
+          "@type": "BedDetails",
+          "typeOfBed": "Double",
+          "numberOfBeds": 1
+        },
+        {
+          "@type": "BedDetails",
+          "typeOfBed": "Single",
+          "numberOfBeds": 2
+        }
+      ]
+    },
+    {
+      "@type": "Room",
+      "name": "Salon-salle à manger",
+      "description": "Grand espace de vie lumineux avec salle à manger",
+      "occupancy": {
+        "@type": "QuantitativeValue",
+        "value": 8
+      }
     }
   ],
 
