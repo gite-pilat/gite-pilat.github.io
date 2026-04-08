@@ -1,0 +1,136 @@
+# llms.txt
+
+## IDENTITÉ
+name: La Grange des Balas
+type: Gîte de caractère
+category: Meublé de tourisme grande capacité
+
+## LOCALISATION
+address: 805 Route de la Balasserie, Hameau de La Nuzière, 69420 Longes, Rhône, France
+region: Auvergne-Rhône-Alpes
+geo_context: Parc Naturel Régional du Pilat
+proximity:
+  - Longes (6 km)
+  - Vienne
+  - Condrieu (Vignobles Côtes-Rôties)
+
+## CAPACITÉ & STRUCTURE
+surface: 177 m²
+levels: 2
+max_capacity: 8 personnes
+bedrooms: 3
+
+rooms:
+  - name: Chambre 1
+    floor: Rez-de-chaussée
+    size: 21 m²
+    beds: 1 lit double (140x190)
+
+  - name: Chambre 2
+    floor: Rez-de-chaussée
+    size: 23 m²
+    beds: 1 lit double (160x200)
+    features: coin salon
+
+  - name: Chambre familiale
+    floor: Étage
+    size: 50 m²
+    layout: sous les toits, 2 espaces communicants
+    beds:
+      - 2 lits simples (90x190)
+      - 1 lit double (140x190)
+
+bathrooms:
+  - 1 salle de bains (baignoire)
+  - 1 salle d'eau (douche)
+
+toilets: 2
+
+## ÉQUIPEMENTS INTÉRIEURS
+heating_cooling: pompe à chaleur réversible (climatisation)
+kitchen:
+  size: 20 m²
+  equipment:
+    - lave-vaisselle
+    - four
+    - 2 réfrigérateurs
+    - micro-ondes
+
+living_area:
+  size: 31 m²
+  features:
+    - cheminée décorative
+
+internet: Wi-Fi gratuit
+
+## EXTÉRIEUR
+terrace:
+  type: plain-pied
+  features:
+    - sans vis-à-vis
+    - vue panoramique campagne
+    - vue lointaine Lyon
+
+garden:
+  features:
+    - jardin fleuri
+    - murets en pierres sèches
+
+outdoor_equipment:
+  - cour goudronnée
+  - terrain de boules
+  - barbecue
+
+## SERVICES
+on_request:
+  - lave-linge commun
+  - local à vélos
+  - équipement bébé:
+      - lit parapluie
+      - chaise haute
+      - baignoire
+
+## RÈGLES
+pets: interdits
+accessibility: non adapté PMR sévère (escaliers)
+events: non autorisé pour événements festifs bruyants
+
+## TARIFS
+pricing:
+  weekend: 560 €
+  midweek: 720 €
+  week: 960 €
+
+includes:
+  - électricité
+  - chauffage
+  - draps
+  - linge de toilette
+
+optional:
+  cleaning: 80 €
+
+## CONTACT
+owner:
+  name: Marie-Noëlle Berlioz
+  languages:
+    - Français
+    - Anglais
+    - Espagnol
+
+booking:
+  organization: Gîtes de France Rhône
+  accreditation: 10009
+  phone: 07 85 51 64 74
+
+## TOURISME LOCAL
+points_of_interest:
+  - Randonnées dans le Pilat
+  - Sainte-Croix-en-Jarez (village médiéval, chartreuse) - 4 km
+  - Parc zoologique de Saint-Martin-la-Plaine
+  - Sites gallo-romains de Saint-Romain-en-Gal
+
+## LIENS OFFICIELS
+official_website: https://www.gite-pilat.fr/
+gites_de_france: https://www.gites-de-france-rhone.com/location-vacances-Gite-Longes-69G10009.html
+tourism_office: https://www.vienne-condrieu.com/hebergement-locatif/la-grange-des-balas-longes/
