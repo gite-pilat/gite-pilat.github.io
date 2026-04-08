@@ -17,13 +17,34 @@
     <meta property="og:image" content="https://gite-pilat.fr/images/exterieur_1.webp">
     <meta property="og:image:alt" content="Façade en pierre du gîte La Grange des Balas avec vue sur le Pilat">
     <meta property="og:locale" content="fr_FR">
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        let savedConsent = localStorage.getItem('GA_cookie');
+
+        if (savedConsent === 'granted') {
+            gtag('consent', 'default', {
+                'ad_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'analytics_storage': 'granted'
+            });
+        } else {
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'analytics_storage': 'denied'
+            });
+        }
+    </script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3QG5655LK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-X3QG5655LK');
 </script>
 
@@ -328,6 +349,12 @@
     </style>
 </head>
 <body class="bg-gray-50">
+
+    <div id="cookie-banner" style="display: none; position: fixed; bottom: 0; width: 100%; background: #eee; padding: 20px; text-align: center; border-top: 1px solid #ccc;">
+        <p>Nous utilisons Google Analytics pour comprendre comment vous utilisez notre site. Acceptez-vous le dépôt de cookies d'analyse ?</p>
+        <button onclick="acceptCookies()">Tout accepter</button>
+        <button onclick="denyCookies()">Tout refuser</button>
+    </div>
 
     <!-- =========== Header =========== -->
     <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-all duration-300 shadow-sm">
@@ -1037,6 +1064,26 @@ const translations = {
     });
 
     </script>
+
+    <script>
+    if (!localStorage.getItem('GA_cookie')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+    }
+    function acceptCookies() {
+        gtag('consent', 'update', {
+            'ad_storage': 'granted',
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'analytics_storage': 'granted'
+        });
+        localStorage.setItem('GA_cookie', 'granted');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+    function denyCookies() {
+        localStorage.setItem('GA_cookie', 'denied');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
 </body>
 </html>
 
