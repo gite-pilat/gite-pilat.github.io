@@ -51,8 +51,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["VacationRental", "LodgingBusiness", "House"],
-  "additionalType": "https://schema.org/TouristAccommodation",
+  "@type": "VacationRental",
   "identifier": "https://gite-pilat.fr/",
   "name": "La Grange des Balas",
   "url": "https://gite-pilat.fr",
@@ -61,10 +60,12 @@
   "image": [
     "https://gite-pilat.fr/images/exterieur_1.webp",
     "https://gite-pilat.fr/images/exterieur_2.webp",
+    "https://gite-pilat.fr/images/exterieur_3.webp",
+    "https://gite-pilat.fr/images/exterieur_4.webp",
+    "https://gite-pilat.fr/images/exterieur_5.webp",
     "https://gite-pilat.fr/images/interieur_1.webp",
     "https://gite-pilat.fr/images/interieur_2.webp",
-    "https://gite-pilat.fr/images/exterieur_3.webp",
-    "https://gite-pilat.fr/images/exterieur_4.webp"
+    "https://gite-pilat.fr/images/interieur_3.webp"
   ],
 
   "address": {
@@ -112,36 +113,16 @@
     { "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }
   ],
 
-  "containsPlace": [
+  "bed": [
     {
-      "@type": "Room",
-      "name": "Chambre double",
-      "additionalType": "Bedroom",
-      "bed": {
-        "@type": "BedDetails",
-        "typeOfBed": "Double"
-      }
+      "@type": "BedDetails",
+      "typeOfBed": "Double",
+      "numberOfBeds": 3
     },
     {
-      "@type": "Room",
-      "name": "Chambre familiale",
-      "additionalType": "Bedroom",
-      "bed": [
-        {
-          "@type": "BedDetails",
-          "typeOfBed": "Double"
-        },
-        {
-          "@type": "BedDetails",
-          "typeOfBed": "Single"
-        }
-      ]
-    },
-    {
-      "@type": "Room",
-      "name": "Salon-salle à manger",
-      "additionalType": "LivingRoom",
-      "description": "Grand espace de vie lumineux avec salle à manger"
+      "@type": "BedDetails",
+      "typeOfBed": "Single",
+      "numberOfBeds": 2
     }
   ],
 
@@ -159,12 +140,13 @@
     "url": "https://gite-pilat.fr"
   },
 
-  "checkinTime": "16:00",
-  "checkoutTime": "10:00",
+  "checkinTime": "16:00:00",
+  "checkoutTime": "10:00:00",
 
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
+    "bestRating": "5",
     "reviewCount": "6"
   },
 
@@ -177,7 +159,8 @@
       },
       "reviewRating": {
         "@type": "Rating",
-        "ratingValue": "5"
+        "ratingValue": "5",
+        "bestRating": "5"
       },
       "reviewBody": "Superbe gite de caractère très bien agencé, très spacieux convient parfaitement à une famille avec des jeunes enfants, la chambre à l’étage est très grande un lit pour 2 personnes et jusqu’à 4 lits pour les enfants (ou autres...) zone de jeu idéale pour occuper les jeunes en cas de mauvais temps. Celui-ci se trouve dans un environnement très agréable et au calme, un joli pied à terre pour visiter les environs qui ne manque pas de lieux Atypiques magnifiquement répertoriés par la propriétaire, personne très gentille et discrète. Nous avons passé un séjour très agréable dans ce lieux (un vrai petit paradis). Merci au propriétaire de donner la possibilité a tout un chacun que pouvoir profiter de lieux magiques comme celui-ci.",
       "datePublished": "2025-09-09"
