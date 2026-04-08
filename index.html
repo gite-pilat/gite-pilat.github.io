@@ -56,7 +56,6 @@
   "name": "La Grange des Balas",
   "url": "https://gite-pilat.fr",
   "description": "Gîte de caractère de 177 m² pour 6 à 8 personnes situé à Longes dans le Parc Naturel Régional du Pilat. Location de vacances idéale pour familles et groupes, avec terrasse panoramique, cuisine équipée, Wi-Fi et environnement calme.",
-  
   "image": [
     "https://gite-pilat.fr/images/exterieur_1.webp",
     "https://gite-pilat.fr/images/exterieur_2.webp",
@@ -67,7 +66,6 @@
     "https://gite-pilat.fr/images/interieur_2.webp",
     "https://gite-pilat.fr/images/interieur_3.webp"
   ],
-
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "805 route de la Balasserie",
@@ -76,88 +74,12 @@
     "addressRegion": "Auvergne-Rhône-Alpes",
     "addressCountry": "FR"
   },
-
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": 45.5061023,
     "longitude": 4.6622564
   },
-
   "telephone": "+33785516474",
-
-  "floorSize": {
-    "@type": "QuantitativeValue",
-    "value": 177,
-    "unitCode": "MTK"
-  },
-
-  "numberOfRooms": 4,
-  "numberOfBedrooms": 3,
-  "numberOfBathroomsTotal": 2,
-
-  "occupancy": {
-    "@type": "QuantitativeValue",
-    "minValue": 6,
-    "maxValue": 8,
-    "unitText": "personnes"
-  },
-
-  "petsAllowed": false,
-
-  "amenityFeature": [
-    { "@type": "LocationFeatureSpecification", "name": "Wi-Fi gratuit", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Terrasse avec vue panoramique", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Local à vélos", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }
-  ],
-
-  "containsPlace": [
-    {
-      "@type": "Room",
-      "name": "Chambre double",
-      "occupancy": {
-        "@type": "QuantitativeValue",
-        "value": 2
-      },
-      "bed": {
-        "@type": "BedDetails",
-        "typeOfBed": "Double",
-        "numberOfBeds": 1
-      }
-    },
-    {
-      "@type": "Room",
-      "name": "Chambre familiale",
-      "occupancy": {
-        "@type": "QuantitativeValue",
-        "value": 4
-      },
-      "bed": [
-        {
-          "@type": "BedDetails",
-          "typeOfBed": "Double",
-          "numberOfBeds": 1
-        },
-        {
-          "@type": "BedDetails",
-          "typeOfBed": "Single",
-          "numberOfBeds": 2
-        }
-      ]
-    },
-    {
-      "@type": "Room",
-      "name": "Salon-salle à manger",
-      "description": "Grand espace de vie lumineux avec salle à manger",
-      "occupancy": {
-        "@type": "QuantitativeValue",
-        "value": 8
-      }
-    }
-  ],
-
   "offers": {
     "@type": "Offer",
     "priceCurrency": "EUR",
@@ -171,17 +93,14 @@
     "availability": "https://schema.org/InStock",
     "url": "https://gite-pilat.fr"
   },
-
   "checkinTime": "16:00:00",
   "checkoutTime": "10:00:00",
-
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
     "bestRating": "5",
     "reviewCount": "6"
   },
-
   "review": [
     {
       "@type": "Review",
@@ -197,7 +116,43 @@
       "reviewBody": "Superbe gite de caractère très bien agencé, très spacieux convient parfaitement à une famille avec des jeunes enfants, la chambre à l’étage est très grande un lit pour 2 personnes et jusqu’à 4 lits pour les enfants (ou autres...) zone de jeu idéale pour occuper les jeunes en cas de mauvais temps. Celui-ci se trouve dans un environnement très agréable et au calme, un joli pied à terre pour visiter les environs qui ne manque pas de lieux Atypiques magnifiquement répertoriés par la propriétaire, personne très gentille et discrète. Nous avons passé un séjour très agréable dans ce lieux (un vrai petit paradis). Merci au propriétaire de donner la possibilité a tout un chacun que pouvoir profiter de lieux magiques comme celui-ci.",
       "datePublished": "2025-09-09"
     }
-  ]
+  ],
+  "containsPlace": {
+    "@type": "Accommodation",
+    "occupancy": {
+      "@type": "QuantitativeValue",
+      "value": 8
+    },
+    "floorSize": {
+      "@type": "QuantitativeValue",
+      "value": 177,
+      "unitCode": "MTK"
+    },
+    "numberOfRooms": 4,
+    "numberOfBedrooms": 3,
+    "numberOfBathroomsTotal": 2,
+    "petsAllowed": false,
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Wi-Fi gratuit", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Cuisine équipée", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Terrasse avec vue panoramique", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Parking gratuit", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Local à vélos", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Moustiquaires", "value": true }
+    ],
+    "bed": [
+      {
+        "@type": "BedDetails",
+        "typeOfBed": "Double",
+        "numberOfBeds": 3
+      },
+      {
+        "@type": "BedDetails",
+        "typeOfBed": "Single",
+        "numberOfBeds": 2
+      }
+    ]
+  }
 }
 </script>
 
