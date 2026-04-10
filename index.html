@@ -499,7 +499,7 @@
                     <i class="fa-solid fa-dog text-4xl text-red-500 mb-3"></i>
                     <span class="font-semibold" data-translate="amenities_pets_val">Animaux non acceptés</span>
                 </div>
-               <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center col-span-full">
                     <i class="fa-solid fa-champagne-glasses text-4xl text-red-500 mb-3"></i>
                     <span class="font-semibold" data-translate="amenities_parties_val">Soirées festives non adaptées</span>
                 </div>
@@ -518,7 +518,7 @@
                     <p class="text-gray-600 text-sm mb-4" data-translate="activities_item1_desc">
                         Explorez les nombreux chemins de la commune et découvrez ses curiosités naturelles et historiques. Pour plus d'itinéraires, consultez le site officiel du Parc Naturel Régional du Pilat.
                     </p>
-                    <span class="text-green-700 font-semibold text-sm group-hover:underline">
+                    <span class="text-green-700 font-semibold text-sm group-hover:underline" data-translate="activities_btn1">
                         Découvrir les sentiers <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i>
                     </span>
                 </a>
@@ -528,7 +528,7 @@
                     <p class="text-gray-600 text-sm mb-4" data-translate="activities_item2_desc">
                         Visitez ce village classé, une ancienne chartreuse au cœur du Pilat. Découvrez son histoire fascinante...
                     </p>
-                    <span class="text-green-700 font-semibold text-sm group-hover:underline">
+                    <span class="text-green-700 font-semibold text-sm group-hover:underline" data-translate="activities_btn2">
                         Découvrir le village <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i>
                     </span>
                 </a>
@@ -538,7 +538,7 @@
                     <p class="text-gray-600 text-sm mb-4" data-translate="activities_item3_desc">
                         Découvrez la riche histoire de Vienne avec son théâtre antique et ses nombreux sites gallo-romains. Planifiez votre visite sur le site de l'Office de Tourisme de Vienne.
                     </p>
-                    <span class="text-green-700 font-semibold text-sm group-hover:underline">
+                    <span class="text-green-700 font-semibold text-sm group-hover:underline" data-translate="activities_btn3">
                         Découvrir Vienne <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i>
                     </span>
                 </a>
@@ -548,9 +548,9 @@
                     <p class="text-gray-600 text-sm mb-4" data-translate="activities_item4_desc">
                         Du musée archéologique de St-Romain-en-Gal au musée de la mine de St-Étienne, plongez dans l'histoire et la culture locales.
                     </p>
-                    <span class="text-green-700 font-semibold text-sm group-hover:underline">
+                    <span class="text-green-700 font-semibold text-sm group-hover:underline" data-translate="activities_btn4">
                         Découvrir les musées <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i>
-                    </span>
+                    </span>                
                 </a>
 
                 <a href="/tourisme/parc-du-pilat.html" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
@@ -558,7 +558,7 @@
                     <p class="text-gray-600 text-sm mb-4" data-translate="activities_item5_desc">
                         Profitez des paysages et des activités offertes par le parc, avec un passage par Pélussin, point de départ de nombreuses randonnées.
                     </p>
-                    <span class="text-green-700 font-semibold text-sm group-hover:underline">
+                    <span class="text-green-700 font-semibold text-sm group-hover:underline" data-translate="activities_btn5">
                         Découvrir le parc <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i>
                     </span>
                 </a>
@@ -568,8 +568,8 @@
                     <p class="text-gray-600 text-sm mb-4" data-translate="activities_item6_desc">
                         Une sortie idéale en famille pour découvrir le parc animalier de Saint-Martin-la-Plaine.
                     </p>
-                    <span class="text-green-700 font-semibold text-sm group-hover:underline">
-                        Découvrir le parc <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i>
+                    <span class="text-green-700 font-semibold text-sm group-hover:underline" data-translate="activities_btn6">
+                        Découvrir le parc animalier <i class="fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1"></i>
                     </span>
                 </a>
 
@@ -756,6 +756,13 @@ const translations = {
                 activities_item5_desc: "Profitez des magnifiques paysages et des activités offertes par le parc. Faites une halte par Pélussin, point de départ idéal pour de nombreuses excursions en pleine nature.",
                 activities_item6_title: "Parc Animalier",
                 activities_item6_desc: "Profitez d'une sortie idéale en famille pour aller découvrir le magnifique parc animalier de Saint-Martin-la-Plaine, qui abrite de très nombreuses espèces du monde entier.",                rates_title: "Tarifs & Disponibilités de notre gîte",
+                activities_btn1: "Découvrir les sentiers <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn2: "Découvrir le village <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn3: "Découvrir Vienne <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn4: "Découvrir les musées <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn5: "Découvrir le parc <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn6: "Découvrir le parc animalier <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                btn_all_activities: "Accéder à toutes les activités <i class=\"fa-solid fa-arrow-right ml-2\"></i>",
                 rates_opening_dates: "Nous vous accueillons du 1er mai au 31 octobre.",
                 rates_item1_label: "Forfait 2 nuits (minimum)",
                 rates_item2_label: "Nuit supplémentaire",
@@ -817,6 +824,13 @@ const translations = {
                 activities_item5_desc: "Enjoy the beautiful landscapes and outdoor activities offered by the park. Stop by Pélussin, the perfect starting point for many memorable excursions in the wilderness.",
                 activities_item6_title: "Animal Park",
                 activities_item6_desc: "Enjoy an ideal family outing to discover the magnificent wildlife park of Saint-Martin-la-Plaine, which is home to a wide variety of amazing species from around the world.",                rates_title: "Rates & Availability for our Gîte",
+                activities_btn1: "Discover the trails <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn2: "Discover the village <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn3: "Discover Vienne <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn4: "Discover the museums <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn5: "Discover the park <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn6: "Discover the park <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                btn_all_activities: "View all activities <i class=\"fa-solid fa-arrow-right ml-2\"></i>",
                 rates_opening_dates: "We welcome you from May 1st to October 31st.",
                 rates_item1_label: "2-night package (minimum)",
                 rates_item2_label: "Additional night",
@@ -878,6 +892,13 @@ const translations = {
                 activities_item5_desc: "Disfruta de los hermosos paisajes y actividades que ofrece el parque. Haz una parada en Pélussin, el punto de partida ideal para muchas excursiones en plena naturaleza.",
                 activities_item6_title: "Parque de animales",
                 activities_item6_desc: "Disfruta de una salida familiar ideal para descubrir el magnífico parque de animales de Saint-Martin-la-Plaine, que alberga numerosas especies asombrosas de todo el mundo.",                rates_title: "Tarifas y Disponibilidad de nuestra casa rural",
+                activities_btn1: "Descubrir los senderos <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn2: "Descubrir el pueblo <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn3: "Descubrir Vienne <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn4: "Descubrir los museos <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn5: "Descubrir el parque <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                activities_btn6: "Descubrir el parque <i class=\"fa-solid fa-arrow-right ml-1 transition-transform group-hover:translate-x-1\"></i>",
+                btn_all_activities: "Ver todas las actividades <i class=\"fa-solid fa-arrow-right ml-2\"></i>",
                 rates_opening_dates: "Le damos la bienvenida del 1 de mayo al 31 de octubre.",
                 rates_item1_label: "Paquete 2 noches (mínimo)",
                 rates_item2_label: "Noche adicional",
