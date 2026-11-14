@@ -6,7 +6,7 @@ type: Gîte de caractère
 category: Meublé de tourisme grande capacité
 
 ## LOCALISATION
-address: 805 Route de la Balasserie, Hameau de La Nuzière, 69420 Longes, Rhône, France
+address: 805 Route de la Balasserie, 69420 Longes, Rhône, France
 region: Auvergne-Rhône-Alpes
 geo_context: Parc Naturel Régional du Pilat
 proximity:
@@ -97,9 +97,8 @@ events: non autorisé pour événements festifs bruyants
 
 ## TARIFS
 pricing:
-  weekend: 560 €
-  midweek: 720 €
-  week: 960 €
+  weekend: 580 €
+  week: 990 €
 
 includes:
   - électricité
@@ -108,7 +107,7 @@ includes:
   - linge de toilette
 
 optional:
-  cleaning: 80 €
+  cleaning: 90 €
 
 ## CONTACT
 owner:

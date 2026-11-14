@@ -108,11 +108,11 @@ Situé en plein cœur du **Parc Naturel Régional du Pilat**, le gîte offre un 
 
 ## 💰 Tarifs gîte Pilat
 
-- 2 nuits minimum : 560€  
-- Nuit supplémentaire : 80€  
-- Semaine complète : 960€  
-- Semaine supplémentaire : 800€  
-- Ménage (option) : 80€  
+- 2 nuits minimum : 580€  
+- Nuit supplémentaire : 90€  
+- Semaine complète : 990€  
+- Semaine supplémentaire : 850€  
+- Ménage (option) : 90€  
 
 Inclus :
 - eau  
